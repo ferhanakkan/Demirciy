@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/demirciy/Demirciy'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Yusuf Demirci' => 'demirciy94@gmail.com' }
-  s.source           = { :git => 'https://github.com/Yusuf Demirci/Demirciy.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/demirciy/Demirciy.git', :tag => s.version.to_s }
   s.social_media_url = 'https://yusufdemirci.dev'
 
   s.ios.deployment_target = '11.0'
