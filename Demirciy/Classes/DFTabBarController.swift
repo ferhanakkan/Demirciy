@@ -8,4 +8,14 @@
 
 import UIKit
 
-open class DFTabBarController: UITabBarController {}
+open class DFTabBarController: UITabBarController {
+    
+    open override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        initUI()
+        addSubviews()
+        addConstraints()
+        observe()
+    }
+}

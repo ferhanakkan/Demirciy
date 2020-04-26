@@ -210,6 +210,12 @@ public extension DFLogManager {
         
         print("DFLogManager: \n--- Error ---\n[\(Date().toString())] \(log) \n--- End ---\n")
     }
+    
+    class func custom(_ log: String) {
+        guard isLoggingEnabled else { return }
+        
+        print("DFLogManager: [\(Date().toString())] \(log)")
+    }
 }
 
 // MARK: - Private Functions

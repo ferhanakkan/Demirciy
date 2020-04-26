@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class DFKeyboardModel {
+public class DFKeyboardModel: DFModel {
     
     // MARK: - Properties
     public var height: CGFloat = 0

@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class DFKeyboardManager: NSObject {
+public class DFKeyboardManager {
     
     // MARK: - Properties
     public static let shared: DFKeyboardManager = DFKeyboardManager()
@@ -17,9 +17,7 @@ public class DFKeyboardManager: NSObject {
     public var keyboardWillHide: ((DFKeyboardModel) -> Void)?
     public private(set) var isKeyboardOpen: Bool = false
     
-    override init() {
-        super.init()
-        
+    private init() {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }

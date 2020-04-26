@@ -6,14 +6,14 @@
 //  Copyright © 2020 Yusuf Demirci. All rights reserved.
 //
 
-public class DFLanguageModel {
+public class DFLanguageModel: DFModel {
     
     // MARK: - Properties
-    var code: String
-    var longCode: String
-    var name: String
+    public var code: String
+    public var longCode: String
+    public var name: String
     
-    init(code: String) {
+    public init(code: String) {
         self.code = code
         
         let language = DFLanguage(rawValue: code)!

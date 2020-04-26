@@ -8,4 +8,14 @@
 
 import UIKit
 
-open class DFNavigationController: UINavigationController {}
+open class DFNavigationController: UINavigationController {
+    
+    open override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        initUI()
+        addSubviews()
+        addConstraints()
+        observe()
+    }
+}

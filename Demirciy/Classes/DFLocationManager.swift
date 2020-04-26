@@ -9,7 +9,7 @@
 import UIKit
 import CoreLocation
 
-public class DFLocationManager: NSObject {
+public class DFLocationManager {
     
     // MARK: - Properties
     public static let shared: DFLocationManager = DFLocationManager()
@@ -22,9 +22,7 @@ public extension DFLocationManager {
         DFAlertManager.showConfirm(title: "General_locationPermissionDeniedAlertTitle".localized(), message: "DFGeneral_locationPermissionDeniedAlertMessage".localized(), confirmButtonTitle: "DFGeneral_locationPermissionDeniedAlertGoSettings".localized(), controller: controller, confirmAction: {
             DFAppManager.shared.showAppSettings()
         }) {
-            DispatchQueue.main.async {
-                cancelCompletion()
-            }
+            cancelCompletion()
         }
     }
     

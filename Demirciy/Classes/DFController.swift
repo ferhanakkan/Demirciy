@@ -13,4 +13,13 @@ open class DFController: UIViewController {
     
     // MARK: - Properties
     public var dfViewModel: DFControllerViewModel!
+    
+    open override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        initUI()
+        addSubviews()
+        addConstraints()
+        observe()
+    }
 }

@@ -9,3 +9,14 @@
 import UIKit
 
 open class DFCollection: UICollectionView {}
+
+// MARK: - Public Functions
+public extension DFCollection {
+    
+    convenience init() {
+        self.init(frame: CGRect.zero, collectionViewLayout: DFCollectionFlowLayout())
+        
+        backgroundColor = UIColor.clear
+        keyboardDismissMode = UIScrollView.KeyboardDismissMode.onDrag
+    }
+}

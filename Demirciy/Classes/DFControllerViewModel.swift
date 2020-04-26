@@ -10,4 +10,5 @@ open class DFControllerViewModel: DFModel {
     
     // MARK: - Properties
     public var isViewDidAppearBefore: Bool = false
+    public var isNeedToRefresh: Bool = false
 }

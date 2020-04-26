@@ -48,6 +48,5 @@ private extension DFErrorModel {
     
     func isIgnoredError(_ messageKey: String) -> Bool {
         return false
-//        return messageKey == MError.MISSING_HEADERS.rawValue
     }
 }

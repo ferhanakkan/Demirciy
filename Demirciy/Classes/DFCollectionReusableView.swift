@@ -1,14 +1,14 @@
 //
-//  DFCollectionCell.swift
-//  DemirciyFramework
+//  DFCollectionReusableView.swift
+//  Demirciy
 //
-//  Created by Yusuf Demirci on 10.12.2019.
-//  Copyright © 2019 Yusuf Demirci. All rights reserved.
+//  Created by Yusuf Demirci on 26.04.2020.
+//  Copyright © 2020 Yusuf Demirci. All rights reserved.
 //
 
 import UIKit
 
-open class DFCollectionCell: UICollectionViewCell {
+open class DFCollectionReusableView: UICollectionReusableView {
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
