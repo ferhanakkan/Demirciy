@@ -1,0 +1,75 @@
+PODS:
+  - Alamofire (5.1.0)
+  - Differentiator (4.0.1)
+  - Kingfisher (5.13.4):
+    - Kingfisher/Core (= 5.13.4)
+  - Kingfisher/Core (5.13.4)
+  - PromiseKit (6.13.1):
+    - PromiseKit/CorePromise (= 6.13.1)
+    - PromiseKit/Foundation (= 6.13.1)
+    - PromiseKit/UIKit (= 6.13.1)
+  - PromiseKit/CorePromise (6.13.1)
+  - PromiseKit/Foundation (6.13.1):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.13.1):
+    - PromiseKit/CorePromise
+  - RxAlamofire (5.2.0):
+    - RxAlamofire/Core (= 5.2.0)
+  - RxAlamofire/Core (5.2.0):
+    - Alamofire (~> 5.1)
+    - RxSwift (~> 5.1)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxLocalizer (1.5.0):
+    - RxCocoa (~> 5.1.1)
+    - RxSwift (~> 5.1.1)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - Kingfisher (= 5.13.4)
+  - PromiseKit (= 6.13.1)
+  - PromiseKit/UIKit
+  - RxAlamofire (= 5.2.0)
+  - RxDataSources (= 4.0.1)
+  - RxLocalizer (= 1.5.0)
+  - RxSwift (= 5.1.1)
+  - SnapKit (= 5.0.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Differentiator
+    - Kingfisher
+    - PromiseKit
+    - RxAlamofire
+    - RxCocoa
+    - RxDataSources
+    - RxLocalizer
+    - RxRelay
+    - RxSwift
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  Kingfisher: d2279a7abece3c7f25a80cd2b7f363ca5cf3f44c
+  PromiseKit: 28fda91c973cc377875d8c0ea4f973013c05b6db
+  RxAlamofire: 878eb06baefd76df6062889be11592434e6c4a95
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxLocalizer: 7db2f964848a885d996d36f47f0e88a477cd627a
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 3f8266adce0502b841d9a8c233dee714da527b2d
+
+COCOAPODS: 1.9.1

@@ -1,6 +1,0 @@
-use_frameworks!
-target 'Demirciy_Tests' do
-  pod 'Demirciy', :path => '../'
-  
-  
-end

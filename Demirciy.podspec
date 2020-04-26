@@ -1,34 +1,22 @@
-#
-# Be sure to run `pod lib lint Demirciy.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
 
 Pod::Spec.new do |s|
   s.name             = 'Demirciy'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Demirciy.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'A base framework is for iOS development.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  DemirciyFramework focuses the base of a development. Managers(Alert, Battery, Camera, Asset, Language, Keyboard, Loading, Location, Log, Service, UserDefaults),
+  extensions, views.
                        DESC
 
-  s.homepage         = 'https://github.com/Yusuf Demirci/Demirciy'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/demirciy/Demirciy'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Yusuf Demirci' => 'demirciy94@gmail.com' }
   s.source           = { :git => 'https://github.com/Yusuf Demirci/Demirciy.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://yusufdemirci.dev'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '11.0'
+  s.swift_version = "5.0"
 
   s.source_files = 'Demirciy/Classes/**/*'
   
@@ -38,5 +26,12 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'RxSwift', '5.1.1'
+  s.dependency 'RxAlamofire', '5.2.0'
+  s.dependency 'RxDataSources', '4.0.1'
+  s.dependency 'RxLocalizer', '1.5.0'
+  s.dependency 'PromiseKit', '6.13.1'
+  s.dependency 'PromiseKit/UIKit'
+  s.dependency 'SnapKit', '5.0.1'
+  s.dependency 'Kingfisher', '5.13.4'
 end
