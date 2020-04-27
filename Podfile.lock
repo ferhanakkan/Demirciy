@@ -25,9 +25,6 @@ PODS:
     - Differentiator (~> 4.0)
     - RxCocoa (~> 5.0)
     - RxSwift (~> 5.0)
-  - RxLocalizer (1.5.0):
-    - RxCocoa (~> 5.1.1)
-    - RxSwift (~> 5.1.1)
   - RxRelay (5.1.1):
     - RxSwift (~> 5)
   - RxSwift (5.1.1)
@@ -39,7 +36,6 @@ DEPENDENCIES:
   - PromiseKit/UIKit
   - RxAlamofire (= 5.2.0)
   - RxDataSources (= 4.0.1)
-  - RxLocalizer (= 1.5.0)
   - RxSwift (= 5.1.1)
   - SnapKit (= 5.0.1)
 
@@ -52,7 +48,6 @@ SPEC REPOS:
     - RxAlamofire
     - RxCocoa
     - RxDataSources
-    - RxLocalizer
     - RxRelay
     - RxSwift
     - SnapKit
@@ -65,11 +60,10 @@ SPEC CHECKSUMS:
   RxAlamofire: 878eb06baefd76df6062889be11592434e6c4a95
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
-  RxLocalizer: 7db2f964848a885d996d36f47f0e88a477cd627a
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 3f8266adce0502b841d9a8c233dee714da527b2d
+PODFILE CHECKSUM: 507f7420f6c826ef9f4678bf594ff7254a80e696
 
 COCOAPODS: 1.9.1

@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Demirciy'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'A base framework is for iOS development.'
 
   s.description      = <<-DESC
@@ -19,17 +19,13 @@ Pod::Spec.new do |s|
   s.swift_version = "5.0"
 
   s.source_files = 'Demirciy/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'Demirciy' => ['Demirciy/Assets/*.png']
-  # }
+  s.resources = 'Demirciy/Resources/*'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'RxSwift', '5.1.1'
   s.dependency 'RxAlamofire', '5.2.0'
   s.dependency 'RxDataSources', '4.0.1'
-  s.dependency 'RxLocalizer', '1.5.0'
   s.dependency 'PromiseKit', '6.13.1'
   s.dependency 'PromiseKit/UIKit'
   s.dependency 'SnapKit', '5.0.1'

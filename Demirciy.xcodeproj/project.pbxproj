@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		B152B53D8CBEAB0F558BF76B /* Pods_Demirciy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1814C01CEDCD5B97BE90650 /* Pods_Demirciy.framework */; };
 		C924A7DC2455A22A003CD3B2 /* Demirciy.h in Headers */ = {isa = PBXBuildFile; fileRef = C924A7DA2455A22A003CD3B2 /* Demirciy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C94E58DD24575C0000CA5A7C /* DFImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94E58DC24575C0000CA5A7C /* DFImageView.swift */; };
 		C969F3642455A5A400968C53 /* DFAssetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C969F3292455A5A000968C53 /* DFAssetManager.swift */; };
 		C969F3652455A5A400968C53 /* DFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C969F32A2455A5A000968C53 /* DFView.swift */; };
 		C969F3662455A5A400968C53 /* DFKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C969F32B2455A5A000968C53 /* DFKeyboardManager.swift */; };
@@ -78,17 +79,34 @@
 		C97667F02455EB7300877531 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97667EF2455EB7300877531 /* UICollectionView+Extension.swift */; };
 		C97667F22455EC7400877531 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97667F12455EC7400877531 /* UIImageView+Extension.swift */; };
 		C97667F42455EE6100877531 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97667F32455EE6100877531 /* UIFont+Extension.swift */; };
+		C97FEC902455F4B9002C6458 /* DemirciyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97FEC8F2455F4B9002C6458 /* DemirciyTests.swift */; };
+		C97FEC922455F4B9002C6458 /* Demirciy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C924A7D72455A22A003CD3B2 /* Demirciy.framework */; platformFilter = ios; };
+		C97FEC9A2455F4D9002C6458 /* DFLanguageManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97FEC992455F4D9002C6458 /* DFLanguageManagerTests.swift */; };
+		C9CE693B245608A000CB240A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9CE6938245608A000CB240A /* Localizable.strings */; };
 		C9DD5C052455A60E007B1BF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9DD5C022455A60E007B1BF5 /* Assets.xcassets */; };
-		C9DD5C082455A6A7007B1BF5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9DD5C0A2455A6A7007B1BF5 /* Localizable.strings */; };
 		C9DF43D92455A35C0063CBDF /* DFController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DF43D62455A35C0063CBDF /* DFController.swift */; };
+		F0360C9BE9B2370BE610DCDE /* Pods_Demirciy_DemirciyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCD7B7B408EC87982E7060AB /* Pods_Demirciy_DemirciyTests.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C97FEC932455F4B9002C6458 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C924A7CE2455A22A003CD3B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C924A7D62455A22A003CD3B2;
+			remoteInfo = Demirciy;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		22B06B0225037155AC691353 /* Pods-Demirciy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demirciy.release.xcconfig"; path = "Target Support Files/Pods-Demirciy/Pods-Demirciy.release.xcconfig"; sourceTree = "<group>"; };
 		7821115A3D6484BD54C58BA1 /* Pods-Demirciy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demirciy.debug.xcconfig"; path = "Target Support Files/Pods-Demirciy/Pods-Demirciy.debug.xcconfig"; sourceTree = "<group>"; };
+		89CDAC92466D26159EC72637 /* Pods-Demirciy-DemirciyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demirciy-DemirciyTests.debug.xcconfig"; path = "Target Support Files/Pods-Demirciy-DemirciyTests/Pods-Demirciy-DemirciyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AAD5418750F6B3A8C26313FA /* Pods-Demirciy-DemirciyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demirciy-DemirciyTests.release.xcconfig"; path = "Target Support Files/Pods-Demirciy-DemirciyTests/Pods-Demirciy-DemirciyTests.release.xcconfig"; sourceTree = "<group>"; };
 		C924A7D72455A22A003CD3B2 /* Demirciy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Demirciy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C924A7DA2455A22A003CD3B2 /* Demirciy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demirciy.h; sourceTree = "<group>"; };
 		C924A7DB2455A22A003CD3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C94E58DC24575C0000CA5A7C /* DFImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFImageView.swift; sourceTree = "<group>"; };
 		C969F3292455A5A000968C53 /* DFAssetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFAssetManager.swift; sourceTree = "<group>"; };
 		C969F32A2455A5A000968C53 /* DFView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFView.swift; sourceTree = "<group>"; };
 		C969F32B2455A5A000968C53 /* DFKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFKeyboardManager.swift; sourceTree = "<group>"; };
@@ -158,10 +176,15 @@
 		C97667EF2455EB7300877531 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		C97667F12455EC7400877531 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		C97667F32455EE6100877531 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		C97FEC8D2455F4B9002C6458 /* DemirciyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemirciyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C97FEC8F2455F4B9002C6458 /* DemirciyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemirciyTests.swift; sourceTree = "<group>"; };
+		C97FEC912455F4B9002C6458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C97FEC992455F4D9002C6458 /* DFLanguageManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFLanguageManagerTests.swift; sourceTree = "<group>"; };
+		C9CE6939245608A000CB240A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C9CE693A245608A000CB240A /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C9DD5C022455A60E007B1BF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C9DD5C092455A6A7007B1BF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		C9DD5C0B2455A6B1007B1BF5 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C9DF43D62455A35C0063CBDF /* DFController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFController.swift; sourceTree = "<group>"; };
+		CCD7B7B408EC87982E7060AB /* Pods_Demirciy_DemirciyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demirciy_DemirciyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1814C01CEDCD5B97BE90650 /* Pods_Demirciy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demirciy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -174,6 +197,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C97FEC8A2455F4B9002C6458 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C97FEC922455F4B9002C6458 /* Demirciy.framework in Frameworks */,
+				F0360C9BE9B2370BE610DCDE /* Pods_Demirciy_DemirciyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -182,6 +214,8 @@
 			children = (
 				7821115A3D6484BD54C58BA1 /* Pods-Demirciy.debug.xcconfig */,
 				22B06B0225037155AC691353 /* Pods-Demirciy.release.xcconfig */,
+				89CDAC92466D26159EC72637 /* Pods-Demirciy-DemirciyTests.debug.xcconfig */,
+				AAD5418750F6B3A8C26313FA /* Pods-Demirciy-DemirciyTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -190,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				E1814C01CEDCD5B97BE90650 /* Pods_Demirciy.framework */,
+				CCD7B7B408EC87982E7060AB /* Pods_Demirciy_DemirciyTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -198,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				C924A7D92455A22A003CD3B2 /* Demirciy */,
+				C97FEC8E2455F4B9002C6458 /* DemirciyTests */,
 				C924A7D82455A22A003CD3B2 /* Products */,
 				421B14196EBE70365D2BE7E2 /* Pods */,
 				BEC8AA7B31C9C5E6D98C0D4D /* Frameworks */,
@@ -208,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				C924A7D72455A22A003CD3B2 /* Demirciy.framework */,
+				C97FEC8D2455F4B9002C6458 /* DemirciyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -215,21 +252,39 @@
 		C924A7D92455A22A003CD3B2 /* Demirciy */ = {
 			isa = PBXGroup;
 			children = (
-				C9DF43D22455A35C0063CBDF /* Assets */,
-				C9DF43D42455A35C0063CBDF /* Classes */,
 				C924A7DA2455A22A003CD3B2 /* Demirciy.h */,
 				C924A7DB2455A22A003CD3B2 /* Info.plist */,
+				C9DF43D42455A35C0063CBDF /* Classes */,
+				C9CE6937245608A000CB240A /* Resources */,
 			);
 			path = Demirciy;
 			sourceTree = "<group>";
 		};
-		C9DF43D22455A35C0063CBDF /* Assets */ = {
+		C97FEC8E2455F4B9002C6458 /* DemirciyTests */ = {
+			isa = PBXGroup;
+			children = (
+				C97FEC912455F4B9002C6458 /* Info.plist */,
+				C97FEC8F2455F4B9002C6458 /* DemirciyTests.swift */,
+				C97FEC982455F4CD002C6458 /* Managers */,
+			);
+			path = DemirciyTests;
+			sourceTree = "<group>";
+		};
+		C97FEC982455F4CD002C6458 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C97FEC992455F4D9002C6458 /* DFLanguageManagerTests.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		C9CE6937245608A000CB240A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				C9DD5C022455A60E007B1BF5 /* Assets.xcassets */,
-				C9DD5C0A2455A6A7007B1BF5 /* Localizable.strings */,
+				C9CE6938245608A000CB240A /* Localizable.strings */,
 			);
-			path = Assets;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		C9DF43D42455A35C0063CBDF /* Classes */ = {
@@ -346,6 +401,7 @@
 				C969F3402455A5A100968C53 /* DFButton.swift */,
 				C969F32C2455A5A000968C53 /* DFCollection.swift */,
 				C97667E92455C18500877531 /* DFCollectionReusableView.swift */,
+				C94E58DC24575C0000CA5A7C /* DFImageView.swift */,
 				C969F3302455A5A000968C53 /* DFLabel.swift */,
 				C969F35B2455A5A400968C53 /* DFScrollView.swift */,
 				C969F34B2455A5A300968C53 /* DFStackView.swift */,
@@ -438,16 +494,40 @@
 			productReference = C924A7D72455A22A003CD3B2 /* Demirciy.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		C97FEC8C2455F4B9002C6458 /* DemirciyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C97FEC952455F4B9002C6458 /* Build configuration list for PBXNativeTarget "DemirciyTests" */;
+			buildPhases = (
+				D17BC6FE6E1FE65ACDAE733A /* [CP] Check Pods Manifest.lock */,
+				C97FEC892455F4B9002C6458 /* Sources */,
+				C97FEC8A2455F4B9002C6458 /* Frameworks */,
+				C97FEC8B2455F4B9002C6458 /* Resources */,
+				DC9F2127322C10951C41D871 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C97FEC942455F4B9002C6458 /* PBXTargetDependency */,
+			);
+			name = DemirciyTests;
+			productName = DemirciyTests;
+			productReference = C97FEC8D2455F4B9002C6458 /* DemirciyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		C924A7CE2455A22A003CD3B2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Yusuf Demirci";
 				TargetAttributes = {
 					C924A7D62455A22A003CD3B2 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					C97FEC8C2455F4B9002C6458 = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
 				};
@@ -467,6 +547,7 @@
 			projectRoot = "";
 			targets = (
 				C924A7D62455A22A003CD3B2 /* Demirciy */,
+				C97FEC8C2455F4B9002C6458 /* DemirciyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -477,7 +558,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9DD5C052455A60E007B1BF5 /* Assets.xcassets in Resources */,
-				C9DD5C082455A6A7007B1BF5 /* Localizable.strings in Resources */,
+				C9CE693B245608A000CB240A /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C97FEC8B2455F4B9002C6458 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +592,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D17BC6FE6E1FE65ACDAE733A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Demirciy-DemirciyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC9F2127322C10951C41D871 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demirciy-DemirciyTests/Pods-Demirciy-DemirciyTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demirciy-DemirciyTests/Pods-Demirciy-DemirciyTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Demirciy-DemirciyTests/Pods-Demirciy-DemirciyTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -545,6 +672,7 @@
 				C969F3862455A5A400968C53 /* DFStackView.swift in Sources */,
 				C969F3802455A5A400968C53 /* UIColor+Extension.swift in Sources */,
 				C97667E82455C10F00877531 /* DFBarButtonItem.swift in Sources */,
+				C94E58DD24575C0000CA5A7C /* DFImageView.swift in Sources */,
 				C969F38F2455A5A400968C53 /* TimeZone+Extension.swift in Sources */,
 				C969F37F2455A5A400968C53 /* DFTorchManager.swift in Sources */,
 				C969F36A2455A5A400968C53 /* DFReachabilityManager.swift in Sources */,
@@ -586,14 +714,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C97FEC892455F4B9002C6458 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C97FEC902455F4B9002C6458 /* DemirciyTests.swift in Sources */,
+				C97FEC9A2455F4D9002C6458 /* DFLanguageManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		C97FEC942455F4B9002C6458 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = C924A7D62455A22A003CD3B2 /* Demirciy */;
+			targetProxy = C97FEC932455F4B9002C6458 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		C9DD5C0A2455A6A7007B1BF5 /* Localizable.strings */ = {
+		C9CE6938245608A000CB240A /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C9DD5C092455A6A7007B1BF5 /* en */,
-				C9DD5C0B2455A6B1007B1BF5 /* tr */,
+				C9CE6939245608A000CB240A /* en */,
+				C9CE693A245608A000CB240A /* tr */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -741,7 +887,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 0.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.demirciy.Demirciy;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -769,11 +915,49 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 0.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.demirciy.Demirciy;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C97FEC962455F4B9002C6458 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89CDAC92466D26159EC72637 /* Pods-Demirciy-DemirciyTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WL6ERJVJSX;
+				INFOPLIST_FILE = DemirciyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demirciy.DemirciyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C97FEC972455F4B9002C6458 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAD5418750F6B3A8C26313FA /* Pods-Demirciy-DemirciyTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WL6ERJVJSX;
+				INFOPLIST_FILE = DemirciyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demirciy.DemirciyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -796,6 +980,15 @@
 			buildConfigurations = (
 				C924A7E02455A22A003CD3B2 /* Debug */,
 				C924A7E12455A22A003CD3B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C97FEC952455F4B9002C6458 /* Build configuration list for PBXNativeTarget "DemirciyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C97FEC962455F4B9002C6458 /* Debug */,
+				C97FEC972455F4B9002C6458 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

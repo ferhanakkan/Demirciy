@@ -41,7 +41,7 @@ public extension DFServiceManager {
             if responseModel.isSuccess, let data = responseModel.data {
                 completion(Result.success(data))
             } else {
-                completion(Result.failure(DFErrorModel.generalError()))
+                completion(Result.failure(responseModel.error))
             }
         }.resume()
     }
