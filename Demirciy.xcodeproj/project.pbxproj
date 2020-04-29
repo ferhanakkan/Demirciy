@@ -79,7 +79,6 @@
 		C97667F02455EB7300877531 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97667EF2455EB7300877531 /* UICollectionView+Extension.swift */; };
 		C97667F22455EC7400877531 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97667F12455EC7400877531 /* UIImageView+Extension.swift */; };
 		C97667F42455EE6100877531 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97667F32455EE6100877531 /* UIFont+Extension.swift */; };
-		C97FEC902455F4B9002C6458 /* DemirciyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97FEC8F2455F4B9002C6458 /* DemirciyTests.swift */; };
 		C97FEC922455F4B9002C6458 /* Demirciy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C924A7D72455A22A003CD3B2 /* Demirciy.framework */; platformFilter = ios; };
 		C97FEC9A2455F4D9002C6458 /* DFLanguageManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97FEC992455F4D9002C6458 /* DFLanguageManagerTests.swift */; };
 		C9CE693B245608A000CB240A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9CE6938245608A000CB240A /* Localizable.strings */; };
@@ -177,7 +176,6 @@
 		C97667F12455EC7400877531 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		C97667F32455EE6100877531 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		C97FEC8D2455F4B9002C6458 /* DemirciyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemirciyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C97FEC8F2455F4B9002C6458 /* DemirciyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemirciyTests.swift; sourceTree = "<group>"; };
 		C97FEC912455F4B9002C6458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C97FEC992455F4D9002C6458 /* DFLanguageManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFLanguageManagerTests.swift; sourceTree = "<group>"; };
 		C9CE6939245608A000CB240A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -264,7 +262,6 @@
 			isa = PBXGroup;
 			children = (
 				C97FEC912455F4B9002C6458 /* Info.plist */,
-				C97FEC8F2455F4B9002C6458 /* DemirciyTests.swift */,
 				C97FEC982455F4CD002C6458 /* Managers */,
 			);
 			path = DemirciyTests;
@@ -718,7 +715,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C97FEC902455F4B9002C6458 /* DemirciyTests.swift in Sources */,
 				C97FEC9A2455F4D9002C6458 /* DFLanguageManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -799,7 +795,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -857,7 +853,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

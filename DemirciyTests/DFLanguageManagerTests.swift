@@ -12,6 +12,10 @@ import Demirciy
 class DFLanguageManagerTests: XCTestCase {
 
     func testLocalized() {
+        DFLanguageManager.shared.changeLanguage("en")
         XCTAssertEqual("DFGeneral_all".localized(), "All")
+        
+        DFLanguageManager.shared.changeLanguage("tr")
+        XCTAssertEqual("DFGeneral_all".localized(), "Hepsi")
     }
 }
