@@ -13,7 +13,7 @@ public extension UIImageView {
     
     func download(_ urlPath: String) {
         guard let url = URL(string: urlPath) else {
-            DFLogManager.e("Invalid url: \(urlPath)")
+            DLogManager.e("Invalid url: \(urlPath)")
             return
         }
         
@@ -23,7 +23,7 @@ public extension UIImageView {
     func download(_ url: URL) {
         clipsToBounds = true
         
-        kf.setImage(with: url, options: [KingfisherOptionsInfoItem.transition(ImageTransition.fade(DFConstant.DFUIConstant.animationDurationFast))])
+        kf.setImage(with: url, options: [KingfisherOptionsInfoItem.transition(ImageTransition.fade(DConstant.DUIConstant.animationDurationFast))])
     }
 }
 

@@ -6,25 +6,25 @@
   Copyright © 2020 Yusuf Demirci. All rights reserved.
 */
 
-// MARK: - General
-DFGeneral_all = "Hepsi";
-DFGeneral_error = "Hata";
-DFGeneral_cameraPermissionDeniedAlertTitle = "Kameraya erişilemiyor";
-DFGeneral_cameraPermissionDeniedAlertMessage = "Kamera izni vermek için ayarlara gidin";
-DFGeneral_cameraPermissionDeniedAlertGoSettings = "Ayarlara Git";
+// MARK: - DGeneral
+DGeneral_all = "Hepsi";
+DGeneral_error = "Hata";
+DGeneral_cameraPermissionDeniedAlertTitle = "Kameraya erişilemiyor";
+DGeneral_cameraPermissionDeniedAlertMessage = "Kamera izni vermek için ayarlara gidin";
+DGeneral_cameraPermissionDeniedAlertGoSettings = "Ayarlara Git";
 
-// MARK: - Error
-DFError_error = "Hata";
-DFError_general = "Bir hata oluştu";
-DFError_parsing = "Response parse hatası oluştu";
-DFError_tryAgain = "Bir hata oluştu. Lütfen tekrar deneyin";
+// MARK: - DError
+DError_error = "Hata";
+DError_general = "Bir hata oluştu";
+DError_parsing = "Response parse hatası oluştu";
+DError_tryAgain = "Bir hata oluştu. Lütfen tekrar deneyin";
 
-// MARK: - Apps
-DFApp_appleMaps = "Apple Haritalar";
-DFApp_googleMaps = "Google Haritalar";
-DFApp_yandex = "Yandex";
+// MARK: - DApps
+DApp_appleMaps = "Apple Haritalar";
+DApp_googleMaps = "Google Haritalar";
+DApp_yandex = "Yandex";
 
-// MARK: - DFAlertManager
-DFAlertManager_ok = "TAMAM";
-DFAlertManager_confirm = "Onayla";
-DFAlertManager_cancel = "VAZGEÇ";
+// MARK: - DAlertManager
+DAlertManager_ok = "TAMAM";
+DAlertManager_confirm = "Onayla";
+DAlertManager_cancel = "VAZGEÇ";

@@ -11,7 +11,7 @@ import UIKit
 @objc extension UIViewController {
     
     open func initUI() {
-        DFLogManager.custom("Showing Controller: \(String(describing: self.classForCoder))")
+        DLogManager.custom("Showing Controller: \(String(describing: self.classForCoder))")
         
         view.backgroundColor = UIColor.white
         hideKeyboardWhenTappedAround()

@@ -6,25 +6,25 @@
   Copyright © 2020 Yusuf Demirci. All rights reserved.
 */
 
-// MARK: - General
-DFGeneral_all = "All";
-DFGeneral_error = "Error";
-DFGeneral_cameraPermissionDeniedAlertTitle = "Can not access the camera";
-DFGeneral_cameraPermissionDeniedAlertMessage = "Go to the setting to allow camera usage";
-DFGeneral_cameraPermissionDeniedAlertGoSettings = "Go to the settings";
+// MARK: - DGeneral
+DGeneral_all = "All";
+DGeneral_error = "Error";
+DGeneral_cameraPermissionDeniedAlertTitle = "Can not access the camera";
+DGeneral_cameraPermissionDeniedAlertMessage = "Go to the setting to allow camera usage";
+DGeneral_cameraPermissionDeniedAlertGoSettings = "Go to the settings";
 
-// MARK: - Error
-DFError_error = "Error";
-DFError_general = "An error occurred.";
-DFError_parsing = "Response parse error occured";
-DFError_tryAgain = "Please try again";
+// MARK: - DError
+DError_error = "Error";
+DError_general = "An error occurred.";
+DError_parsing = "Response parse error occured";
+DError_tryAgain = "Please try again";
 
-// MARK: - Apps
-DFApp_appleMaps = "Apple Maps";
-DFApp_googleMaps = "Google Maps";
-DFApp_yandex = "Yandex";
+// MARK: - DApps
+DApp_appleMaps = "Apple Maps";
+DApp_googleMaps = "Google Maps";
+DApp_yandex = "Yandex";
 
-// MARK: - DFAlertManager
-DFAlertManager_ok = "OK";
-DFAlertManager_confirm = "Confirm";
-DFAlertManager_cancel = "CANCEL";
+// MARK: - DAlertManager
+DAlertManager_ok = "OK";
+DAlertManager_confirm = "Confirm";
+DAlertManager_cancel = "CANCEL";
