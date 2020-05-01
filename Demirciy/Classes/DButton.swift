@@ -8,4 +8,11 @@
 
 import UIKit
 
-open class DButton: UIButton {}
+open class DButton: UIButton {
+    
+//    convenience init(title: String? = nil, titleColor: UIColor = UIColor.black) {
+//        self.init(frame: CGRect.zero)
+//        
+//        
+//    }
+}

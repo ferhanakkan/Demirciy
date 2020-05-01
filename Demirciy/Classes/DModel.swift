@@ -6,4 +6,7 @@
 //  Copyright © 2020 Yusuf Demirci. All rights reserved.
 //
 
-open class DModel: CustomStringConvertible {}
+open class DModel: CustomStringConvertible {
+    
+    public init() {}
+}

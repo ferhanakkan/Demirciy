@@ -14,6 +14,16 @@ open class DController: UIViewController {
     // MARK: - Properties
     public var dViewModel: DControllerViewModel!
     
+    public init(viewModel: DControllerViewModel? = nil) {
+        self.dViewModel = viewModel
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    public required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     open override func viewDidLoad() {
         super.viewDidLoad()
         

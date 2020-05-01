@@ -31,6 +31,12 @@ public extension UIViewController {
     var isViewActive: Bool {
         return view.window != nil
     }
+    
+    func addSubviews(_ subviews: [UIView]) {
+        for subview in subviews {
+            view.addSubview(subview)
+        }
+    }
 }
 
 private extension UIViewController {

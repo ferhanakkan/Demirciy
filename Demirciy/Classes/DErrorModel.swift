@@ -31,15 +31,11 @@ public class DErrorModel: Error {
 public extension DErrorModel {
     
     class func generalError() -> DErrorModel {
-        let errorModel: DErrorModel = DErrorModel()
-        errorModel.messageKey = DError.general.rawValue
-        return errorModel
+        return DErrorModel(DError.general.rawValue)
     }
     
     class func tryAgainError() -> DErrorModel {
-        let errorModel: DErrorModel = DErrorModel()
-        errorModel.messageKey = DError.tryAgain.rawValue
-        return errorModel
+        return DErrorModel(DError.tryAgain.rawValue)
     }
 }
 

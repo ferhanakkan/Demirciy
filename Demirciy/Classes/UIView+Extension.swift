@@ -21,6 +21,12 @@ import UIKit
 
 public extension UIView {
     
+    convenience init(backgroundColor: UIColor) {
+        self.init(frame: CGRect.zero)
+        
+        self.backgroundColor = backgroundColor
+    }
+    
     func addCornerRadius(_ radius: CGFloat) {
         clipsToBounds = true
         layer.cornerRadius = radius

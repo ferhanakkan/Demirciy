@@ -331,11 +331,11 @@
 			children = (
 				C969F3482455A5A300968C53 /* DControllerViewModel.swift */,
 				C969F3582455A5A400968C53 /* DErrorModel.swift */,
-				C969F3432455A5A100968C53 /* DRequestModel.swift */,
 				C969F3572455A5A400968C53 /* DKeyboardModel.swift */,
 				C969F3362455A5A000968C53 /* DLanguageModel.swift */,
 				C969F3552455A5A300968C53 /* DModel.swift */,
 				C969F3622455A5A400968C53 /* DPushNotificationModel.swift */,
+				C969F3432455A5A100968C53 /* DRequestModel.swift */,
 				C969F3372455A5A000968C53 /* DResponseModel.swift */,
 			);
 			name = Models;
@@ -875,7 +875,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.0;
+				MARKETING_VERSION = 0.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.demirciy.Demirciy;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -903,7 +903,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.0;
+				MARKETING_VERSION = 0.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.demirciy.Demirciy;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

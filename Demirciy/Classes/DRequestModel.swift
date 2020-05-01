@@ -16,20 +16,20 @@ public enum DRequestHTTPMethod: String {
 open class DRequestModel: NSObject {
     
     // MARK: - Properties
+    open var endpoint: URL {
+        return DServiceManager.shared.baseURL.appendingPathComponent(path)
+    }
     open var path: String {
         return ""
     }
-    var parameters: [String: Any?] {
+    open var parameters: [String: Any?] {
         return [:]
     }
     open var headers: [String: String] {
         return [:]
     }
     open var method: DRequestHTTPMethod {
-        return body.isEmpty ? DRequestHTTPMethod.get : DRequestHTTPMethod.post
-    }
-    open var body: [String: Any?] {
-        return [:]
+        return DRequestHTTPMethod.get
     }
     // (request, response)
     open var isLoggingEnabled: (Bool, Bool) {
@@ -41,28 +41,35 @@ open class DRequestModel: NSObject {
 public extension DRequestModel {
     
     func urlRequest() -> URLRequest {
-        var endpoint: String = DServiceManager.shared.baseURL.appending(path)
+        var request: URLRequest!
         
-        for parameter in parameters {
-            if let value = parameter.value as? String {
-                endpoint.append("?\(parameter.key)=\(value)")
+        switch method {
+        case DRequestHTTPMethod.get:
+            var urlComponents = URLComponents(url: endpoint, resolvingAgainstBaseURL: true)!
+
+            if !parameters.isEmpty {
+                urlComponents.queryItems = []
+
+                for parameter in parameters {
+                    urlComponents.queryItems?.append(URLQueryItem(name: parameter.key, value: (parameter.value as? String) ?? ""))
+                }
+            }
+            
+            request = URLRequest(url: urlComponents.url!)
+        case DRequestHTTPMethod.post:
+            request = URLRequest(url: endpoint)
+            
+            do {
+                request.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: JSONSerialization.WritingOptions.prettyPrinted)
+            } catch let error {
+                DLogManager.e("Request body parse error: \(error.localizedDescription)")
             }
         }
-        
-        var request: URLRequest = URLRequest(url: URL(string: endpoint)!)
-        
+
         request.httpMethod = method.rawValue
         
         for header in headers {
             request.addValue(header.value, forHTTPHeaderField: header.key)
-        }
-        
-        if method == DRequestHTTPMethod.post {
-            do {
-                request.httpBody = try JSONSerialization.data(withJSONObject: body, options: JSONSerialization.WritingOptions.prettyPrinted)
-            } catch let error {
-                DLogManager.e("Request body parse error: \(error.localizedDescription)")
-            }
         }
         
         return request

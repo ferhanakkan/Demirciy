@@ -8,6 +8,10 @@
 
 public extension Data {
     
+    var bytes: [UInt8] {
+        return [UInt8](self)
+    }
+    
     func toString() -> String? {
         return String(data: self, encoding: String.Encoding.utf8)
     }

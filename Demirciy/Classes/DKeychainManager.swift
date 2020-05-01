@@ -23,7 +23,7 @@ public extension DKeychainManager {
         return SecItemAdd(query as CFDictionary, nil)
     }
 
-    class func get(key: String) -> Data? {
+    class func get<T>(key: String) -> T? {
         let query = [
             kSecClass as String: kSecClassGenericPassword,
             kSecAttrAccount as String: key,
@@ -35,6 +35,6 @@ public extension DKeychainManager {
 
         let status: OSStatus = SecItemCopyMatching(query as CFDictionary, &dataTypeRef)
         
-        return status == noErr ? dataTypeRef as! Data? : nil
+        return status == noErr ? dataTypeRef as? T : nil
     }
 }
