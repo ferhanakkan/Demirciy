@@ -7,34 +7,22 @@
 //
 
 import RxSwift
+import RxLocalizer
 
 public class DLanguageManager {
     
     // MARK: - Properties
     public static let shared: DLanguageManager = DLanguageManager()
     
-    public var language: String = UserDefaults.standard.stringArray(forKey: "AppleLanguages")?.first ?? DLanguage.en.rawValue
-    public var languageChanged: ((String) -> Void)?
-}
-
-// MARK: - Public Functions
-public extension DLanguageManager {
-    
-    func changeLanguage(_ to: String) {
-        language = to
-        UserDefaults.standard.set([to], forKey: "AppleLanguages")
-        languageChanged?(to)
+    var language: String {
+        return Localizer.shared.currentLanguageCodeValue ?? UserDefaults.standard.stringArray(forKey: "AppleLanguages")?.first ?? DLanguage.en.rawValue
     }
 }
 
 // MARK: - Public String Extensions
 public extension String {
     
-    func localized(bundle: Bundle? = nil) -> String {
-        if let bundle = bundle {
-            return NSLocalizedString(self, bundle: bundle, comment: "")
-        }
-        
+    func dLocalized() -> String {
         if let mainLanguagePath = Bundle.main.path(forResource: DLanguageManager.shared.language, ofType: "lproj"), let bundle = Bundle(path: mainLanguagePath), NSLocalizedString(self, bundle: bundle, comment: "") != self {
             return NSLocalizedString(self, bundle: bundle, comment: "")
         }

@@ -23,11 +23,15 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'RxSwift', '5.1.1'
-  s.dependency 'RxAlamofire', '5.2.0'
-  s.dependency 'RxDataSources', '4.0.1'
+
+  s.dependency 'Kingfisher', '5.13.4'
   s.dependency 'PromiseKit', '6.13.1'
   s.dependency 'PromiseKit/UIKit'
+  s.dependency 'RxSwift', '5.1.1'
+  s.dependency 'RxCocoa', '5.1.1'
+  s.dependency 'RxAlamofire', '5.2.0'
+  s.dependency 'RxDataSources', '4.0.1'
+  s.dependency 'RxLocalizer', '1.5.0'
+  s.dependency 'RxTheme', '4.0.0'
   s.dependency 'SnapKit', '5.0.1'
-  s.dependency 'Kingfisher', '5.13.4'
 end

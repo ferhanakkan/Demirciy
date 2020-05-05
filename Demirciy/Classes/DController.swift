@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SnapKit
 
 open class DController: UIViewController {
     
@@ -28,6 +27,8 @@ open class DController: UIViewController {
         super.viewDidLoad()
         
         initUI()
+        initLocale()
+        initTheme()
         addSubviews()
         addConstraints()
         observe()

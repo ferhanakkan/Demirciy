@@ -6,33 +6,24 @@
 //  Copyright © 2019 Yusuf Demirci. All rights reserved.
 //
 
-public class DUserDefaultsManager {
+public class DUserDefaultsManager: UserDefaults {
     
     // MARK: - Properties
-    private var userDefaults: UserDefaults
-    
-    public init(suiteName: String? = nil) {
-        if let suiteName = suiteName, let defaults = UserDefaults(suiteName: suiteName) {
-            userDefaults = defaults
-            return
-        }
-        
-        userDefaults = UserDefaults.standard
-    }
+    public static let demirciy: UserDefaults = UserDefaults(suiteName: Bundle(for: DUserDefaultsManager.self).bundleIdentifier)!
 }
 
 // MARK: - Public Functions
 public extension DUserDefaultsManager {
     
     func set(key: String, value: Any?) {
-        userDefaults.set(value, forKey: key)
+        set(value, forKey: key)
     }
     
     func get<T>(_ key: String) -> T? {
-        return userDefaults.object(forKey: key) as? T
+        return object(forKey: key) as? T
     }
     
     func isExist(_ key: String) -> Bool {
-        return userDefaults.object(forKey: key) != nil
+        return object(forKey: key) != nil
     }
 }

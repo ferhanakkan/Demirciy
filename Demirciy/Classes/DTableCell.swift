@@ -14,6 +14,8 @@ open class DTableCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         initUI()
+        initLocale()
+        initTheme()
         addSubviews()
         addConstraints()
         observe()

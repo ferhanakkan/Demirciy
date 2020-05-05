@@ -8,15 +8,13 @@
 
 import UIKit
 
-open class DCollection: UICollectionView {}
-
-// MARK: - Public Functions
-public extension DCollection {
+open class DCollection: UICollectionView {
     
-    convenience init() {
-        self.init(frame: CGRect.zero, collectionViewLayout: DCollectionFlowLayout())
-        
-        backgroundColor = UIColor.clear
-        keyboardDismissMode = UIScrollView.KeyboardDismissMode.onDrag
+    public init(layout: DCollectionLayout = DCollectionLayout(scrollDirection: UICollectionView.ScrollDirection.vertical)) {
+        super.init(frame: CGRect.zero, collectionViewLayout: layout)
+    }
+    
+    public required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }

@@ -12,6 +12,10 @@ import UIKit
     
     open func initUI() {}
     
+    open func initLocale() {}
+    
+    open func initTheme() {}
+    
     open func addSubviews() {}
     
     open func addConstraints() {}
@@ -27,7 +31,13 @@ public extension UIView {
         self.backgroundColor = backgroundColor
     }
     
-    func addCornerRadius(_ radius: CGFloat) {
+    func addSubviews(_ subviews: [UIView]) {
+        for subview in subviews {
+            addSubview(subview)
+        }
+    }
+    
+    func cornerRadius(_ radius: CGFloat) {
         clipsToBounds = true
         layer.cornerRadius = radius
     }

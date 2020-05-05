@@ -17,11 +17,13 @@ import UIKit
         hideKeyboardWhenTappedAround()
     }
     
+    open func initLocale() {}
+    
+    open func initTheme() {}
+    
     open func addSubviews() {}
     
-    open func addConstraints() {
-        view.layoutIfNeeded()
-    }
+    open func addConstraints() {}
     
     open func observe() {}
 }
@@ -33,9 +35,7 @@ public extension UIViewController {
     }
     
     func addSubviews(_ subviews: [UIView]) {
-        for subview in subviews {
-            view.addSubview(subview)
-        }
+        view.addSubviews(subviews)
     }
 }
 

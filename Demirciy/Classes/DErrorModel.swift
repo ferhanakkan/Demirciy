@@ -11,8 +11,8 @@ public class DErrorModel: Error {
     // MARK: - Properties
     public var messageKey: String?
     public var message: String {
-        guard let messageKey = messageKey else { return DError.general.rawValue.localized() }
-        return isIgnoredError(messageKey) ? DError.general.rawValue.localized() : messageKey.localized()
+        guard let messageKey = messageKey else { return DError.general.rawValue.dLocalized() }
+        return isIgnoredError(messageKey) ? DError.general.rawValue.dLocalized() : messageKey.dLocalized()
     }
     public var customMessage: String?
     

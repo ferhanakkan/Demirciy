@@ -11,6 +11,7 @@ open class DControllerViewModel: DModel {
     // MARK: - Properties
     public var isViewDidAppearBefore: Bool = false
     public var isNeedToRefresh: Bool = false
+    public var errorDidOccur: ((DErrorModel) -> Void)?
     
     public override init() {
         super.init()

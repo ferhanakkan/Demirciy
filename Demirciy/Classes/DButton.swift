@@ -8,11 +8,14 @@
 
 import UIKit
 
-open class DButton: UIButton {
+open class DButton: UIButton {}
+
+// MARK: - Public Functions
+public extension DButton {
     
-//    convenience init(title: String? = nil, titleColor: UIColor = UIColor.black) {
-//        self.init(frame: CGRect.zero)
-//        
-//        
-//    }
+    func title(title: String? = nil, titleColor: UIColor = UIColor.black) -> DButton {
+        setTitle(title, for: UIControl.State.normal)
+        setTitleColor(titleColor, for: UIControl.State.normal)
+        return self
+    }
 }

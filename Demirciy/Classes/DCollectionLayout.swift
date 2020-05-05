@@ -1,5 +1,5 @@
 //
-//  DCollectionFlowLayout.swift
+//  DCollectionLayout.swift
 //  Demirciy
 //
 //  Created by Yusuf Demirci on 26.04.2020.
@@ -8,21 +8,34 @@
 
 import UIKit
 
-public enum DCollectionFlowLayoutAlignment {
+public enum DCollectionLayoutAlignment {
     case left
     case none
 }
 
-open class DCollectionFlowLayout: UICollectionViewFlowLayout {
+open class DCollectionLayout: UICollectionViewFlowLayout {
     
     // MARK: - Properties
-    public var alignment: DCollectionFlowLayoutAlignment = DCollectionFlowLayoutAlignment.none
+    public var alignment: DCollectionLayoutAlignment = DCollectionLayoutAlignment.none
+    
+    public init(scrollDirection: UICollectionView.ScrollDirection, sectionInset: UIEdgeInsets = UIEdgeInsets.zero, minimumLineSpacing: CGFloat = 0, minimumInteritemSpacing: CGFloat = 0) {
+        super.init()
+        
+        self.scrollDirection = scrollDirection
+        self.sectionInset = sectionInset
+        self.minimumLineSpacing = minimumLineSpacing
+        self.minimumInteritemSpacing = minimumInteritemSpacing
+    }
+    
+    public required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override open func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         let attributes = super.layoutAttributesForElements(in: rect)
 
         switch alignment {
-        case DCollectionFlowLayoutAlignment.left:
+        case DCollectionLayoutAlignment.left:
             var leftMargin = sectionInset.left
             var maxY: CGFloat = -1.0
             attributes?.forEach { layoutAttribute in
@@ -44,9 +57,9 @@ open class DCollectionFlowLayout: UICollectionViewFlowLayout {
 }
 
 // MARK: - Public Functions
-public extension DCollectionFlowLayout {
+public extension DCollectionLayout {
     
-    func initZero() -> DCollectionFlowLayout {
+    func initZero() -> DCollectionLayout {
         minimumLineSpacing = 0
         minimumInteritemSpacing = 0
         sectionInset = UIEdgeInsets.zero

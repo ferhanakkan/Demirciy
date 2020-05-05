@@ -7,15 +7,16 @@
 //
 
 import XCTest
-import Demirciy
+@testable import Demirciy
+@testable import RxLocalizer
 
 class DLanguageManagerTests: XCTestCase {
 
     func testLocalized() {
-        DLanguageManager.shared.changeLanguage("en")
-        XCTAssertEqual("DGeneral_all".localized(), "All")
+        Localizer.shared.changeLanguage.accept("en")
+        XCTAssertEqual("DGeneral_all".dLocalized(), "All")
         
-        DLanguageManager.shared.changeLanguage("tr")
-        XCTAssertEqual("DGeneral_all".localized(), "Hepsi")
+        Localizer.shared.changeLanguage.accept("tr")
+        XCTAssertEqual("DGeneral_all".dLocalized(), "Hepsi")
     }
 }

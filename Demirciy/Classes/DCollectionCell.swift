@@ -14,6 +14,8 @@ open class DCollectionCell: UICollectionViewCell {
         super.init(frame: frame)
         
         initUI()
+        initLocale()
+        initTheme()
         addSubviews()
         addConstraints()
         observe()
