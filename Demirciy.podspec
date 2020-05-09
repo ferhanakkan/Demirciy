@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   # s.frameworks = 'UIKit', 'MapKit'
 
   s.dependency 'Kingfisher', '5.13.4'
+  s.dependency 'Moya', '14.0.0'
   s.dependency 'PromiseKit', '6.13.1'
   s.dependency 'PromiseKit/UIKit'
   s.dependency 'RxSwift', '5.1.1'

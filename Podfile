@@ -5,6 +5,7 @@ target 'Demirciy' do
   use_frameworks!
 
   pod 'Kingfisher', '5.13.4'
+  pod 'Moya', '14.0.0'
   pod 'PromiseKit', '6.13.1'
   pod 'PromiseKit/UIKit'
   pod 'RxSwift', '5.1.1'

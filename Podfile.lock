@@ -4,6 +4,10 @@ PODS:
   - Kingfisher (5.13.4):
     - Kingfisher/Core (= 5.13.4)
   - Kingfisher/Core (5.13.4)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
   - PromiseKit (6.13.1):
     - PromiseKit/CorePromise (= 6.13.1)
     - PromiseKit/Foundation (= 6.13.1)
@@ -38,6 +42,7 @@ PODS:
 
 DEPENDENCIES:
   - Kingfisher (= 5.13.4)
+  - Moya (= 14.0.0)
   - PromiseKit (= 6.13.1)
   - PromiseKit/UIKit
   - RxAlamofire (= 5.2.0)
@@ -45,7 +50,7 @@ DEPENDENCIES:
   - RxDataSources (= 4.0.1)
   - RxLocalizer (= 1.5.0)
   - RxSwift (= 5.1.1)
-  - RxTheme
+  - RxTheme (= 4.0.0)
   - SnapKit (= 5.0.1)
 
 SPEC REPOS:
@@ -53,6 +58,7 @@ SPEC REPOS:
     - Alamofire
     - Differentiator
     - Kingfisher
+    - Moya
     - PromiseKit
     - RxAlamofire
     - RxCocoa
@@ -67,6 +73,7 @@ SPEC CHECKSUMS:
   Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   Kingfisher: d2279a7abece3c7f25a80cd2b7f363ca5cf3f44c
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   PromiseKit: 28fda91c973cc377875d8c0ea4f973013c05b6db
   RxAlamofire: 878eb06baefd76df6062889be11592434e6c4a95
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
@@ -77,6 +84,6 @@ SPEC CHECKSUMS:
   RxTheme: 0b642f47c7d197a803c6b9c083964188c34f7ddb
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: dca2d8de39586cc01f40e2be01764dbdcf472abd
+PODFILE CHECKSUM: 710d05ad1fb0d20bc022717428f8f1269814df36
 
 COCOAPODS: 1.9.1

@@ -6,6 +6,8 @@
 //  Copyright © 2019 Yusuf Demirci. All rights reserved.
 //
 
+import Moya
+
 private enum LogType: String {
     case e = "[‼️]" // error
     case i = "[ℹ️]" // info
@@ -25,7 +27,8 @@ public class DLogManager {
         formatter.timeZone = TimeZone.current
         return formatter
     }
-    private static var dateFormat = "hh:mm:ss"
+    private static let logPrefix: String = "DLogManager:"
+    private static let dateFormat = "hh:mm:ss"
     private static var isLoggingEnabled: Bool {
         #if DEBUG
         return true
@@ -40,37 +43,37 @@ public extension DLogManager {
     
     class func e( _ object: Any, filename: String = #file, line: Int = #line, funcName: String = #function) {
         if isLoggingEnabled {
-            print("DLogManager: \(Date().toString()) \(LogType.e.rawValue)[\(sourceFileName(filePath: filename))]:\(line) \(funcName) -> \(object)")
+            print("\(logPrefix) \(Date().toString()) \(LogType.e.rawValue)[\(sourceFileName(filePath: filename))]:\(line) \(funcName) -> \(object)")
         }
     }
     
     class func i ( _ object: Any, filename: String = #file, line: Int = #line, funcName: String = #function) {
         if isLoggingEnabled {
-            print("DLogManager: \(Date().toString()) \(LogType.i.rawValue)[\(sourceFileName(filePath: filename))]:\(line) \(funcName) -> \(object)")
+            print("\(logPrefix) \(Date().toString()) \(LogType.i.rawValue)[\(sourceFileName(filePath: filename))]:\(line) \(funcName) -> \(object)")
         }
     }
     
     class func d( _ object: Any, filename: String = #file, line: Int = #line, funcName: String = #function) {
         if isLoggingEnabled {
-            print("DLogManager: \(Date().toString()) \(LogType.d.rawValue)[\(sourceFileName(filePath: filename))]:\(line) \(funcName) -> \(object)")
+            print("\(logPrefix) \(Date().toString()) \(LogType.d.rawValue)[\(sourceFileName(filePath: filename))]:\(line) \(funcName) -> \(object)")
         }
     }
     
     class func v( _ object: Any, filename: String = #file, line: Int = #line, funcName: String = #function) {
         if isLoggingEnabled {
-            print("DLogManager: \(Date().toString()) \(LogType.v.rawValue)[\(sourceFileName(filePath: filename))]:\(line) \(funcName) -> \(object)")
+            print("\(logPrefix) \(Date().toString()) \(LogType.v.rawValue)[\(sourceFileName(filePath: filename))]:\(line) \(funcName) -> \(object)")
         }
     }
     
     class func w( _ object: Any?, filename: String = #file, line: Int = #line, funcName: String = #function) {
         if isLoggingEnabled {
-            print("DLogManager: \(Date().toString()) \(LogType.w.rawValue)[\(sourceFileName(filePath: filename))]:\(line) \(funcName) -> \(object!)")
+            print("\(logPrefix) \(Date().toString()) \(LogType.w.rawValue)[\(sourceFileName(filePath: filename))]:\(line) \(funcName) -> \(object!)")
         }
     }
     
     class func s( _ object: Any, filename: String = #file, line: Int = #line, column: Int = #column, funcName: String = #function) {
         if isLoggingEnabled {
-            print("DLogManager: \(Date().toString()) \(LogType.s.rawValue)[\(sourceFileName(filePath: filename))]:\(line) \(column) \(funcName) -> \(object)")
+            print("\(logPrefix) \(Date().toString()) \(LogType.s.rawValue)[\(sourceFileName(filePath: filename))]:\(line) \(column) \(funcName) -> \(object)")
         }
     }
     
@@ -103,7 +106,33 @@ public extension DLogManager {
             log = log + "\n[\(parameters)]"
         }
         
-        print("DLogManager: \n--- Request ---\n[\(Date().toString())] \n\(log) \n--- End ---\n")
+        print("\(logPrefix) \n--- Request ---\n[\(Date().toString())] \n\(log) \n--- End ---\n")
+    }
+    
+    class func req(_ urlRequest: URLRequest) {
+        guard isLoggingEnabled else { return }
+        
+        let url: String = urlRequest.url?.relativeString ?? "-no url-"
+        let headers: String = String(describing: urlRequest.headers)
+        let httpMethod: String = urlRequest.httpMethod ?? "-no http method-"
+        var parameters: String = ""
+        if let body = urlRequest.httpBody, let bodyString = body.toString() {
+            parameters = bodyString
+        }
+        
+        var log: String = "[\(url)]"
+        
+        if !headers.isEmpty {
+            log = log + "\n[\(headers)]"
+        }
+        
+        log = log + "\n[\(httpMethod)]"
+        
+        if !parameters.isEmpty {
+            log = log + "\n[\(parameters)]"
+        }
+        
+        print("\(logPrefix) \n--- Request ---\n[\(Date().toString())] \n\(log) \n--- End ---\n")
     }
     
     class func res<T: Codable>(_ response: DResponseModel<T>) {
@@ -126,7 +155,26 @@ public extension DLogManager {
             log = log + "\n[\(json)]"
         }
         
-        print("DLogManager: \n--- Response ---\n[\(Date().toString())] \n\(log) \n--- End ---\n")
+        print("\(logPrefix) \n--- Response ---\n[\(Date().toString())] \n\(log) \n--- End ---\n")
+    }
+    
+    class func res(_ result: Result<Response, MoyaError>) {
+        guard isLoggingEnabled else { return }
+        
+        do {
+            let response = try result.get()
+            
+            let url: String = response.request?.url?.relativeString ?? "-no url-"
+            let dataJSON: String? = String(data: response.data, encoding: String.Encoding.utf8)
+            
+            var log: String = "[\(url)]"
+            
+            if let json = dataJSON {
+                log = log + "\n[\(json)]"
+            }
+            
+            print("\(logPrefix) \n--- Response ---\n[\(Date().toString())] \n\(log) \n--- End ---\n")
+        } catch {}
     }
     
     class func err(_ error: DErrorModel) {
@@ -146,13 +194,13 @@ public extension DLogManager {
         
         if log.isEmpty { return }
         
-        print("DLogManager: \n--- Error ---\n[\(Date().toString())] \(log) \n--- End ---\n")
+        print("\(logPrefix) \n--- Error ---\n[\(Date().toString())] \(log) \n--- End ---\n")
     }
     
     class func custom(_ log: String) {
         guard isLoggingEnabled else { return }
         
-        print("DLogManager: [\(Date().toString())] \(log)")
+        print("\(logPrefix) [\(Date().toString())] \(log)")
     }
 }
 

@@ -6,6 +6,8 @@
 //  Copyright © 2019 Yusuf Demirci. All rights reserved.
 //
 
+import Moya
+
 public struct DResponseModel<T: Decodable>: Decodable {
     
     public var isSuccess: Bool
@@ -27,6 +29,33 @@ public struct DResponseModel<T: Decodable>: Decodable {
         isSuccess = (try? keyedContainer.decode(Bool.self, forKey: .isSuccess)) ?? false
         message = (try? keyedContainer.decode(String.self, forKey: .message)) ?? ""
         data = try? keyedContainer.decode(T.self, forKey: .data)
+    }
+}
+
+// MARK: - Public Functions
+public extension DResponseModel {
+    
+    static func parseMoya<T: Codable>(moyaResult: Swift.Result<Response, MoyaError>, completion: (Swift.Result<T, DErrorModel>) -> Void) {
+        switch moyaResult {
+        case Swift.Result.success(let response):
+            guard var responseModel = try? JSONDecoder().decode(DResponseModel<T>.self, from: response.data) else {
+                let error: DErrorModel = DErrorModel(DError.parsing.rawValue)
+                DLogManager.err(error)
+                completion(Swift.Result.failure(error))
+                return
+            }
+
+            responseModel.rawData = response.data
+
+            if responseModel.isSuccess, let data = responseModel.data {
+                completion(Swift.Result.success(data))
+            } else {
+                completion(Swift.Result.failure(responseModel.error))
+            }
+        case Swift.Result.failure(let error):
+            DLogManager.e(error.localizedDescription)
+            completion(Swift.Result.failure(DErrorModel.generalError()))
+        }
     }
 }
 

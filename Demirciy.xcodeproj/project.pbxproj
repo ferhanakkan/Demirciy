@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A6B3DE2A6F7C19B14401F177 /* Pods_Demirciy_DemirciyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA8863DCBEAD3494AAE6641 /* Pods_Demirciy_DemirciyTests.framework */; };
 		B274FD7007BCF1A065B163DD /* Pods_Demirciy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6F328A4F9B1B47D00AD761 /* Pods_Demirciy.framework */; };
+		C903563D2466C176000FE10B /* DMoyaLogPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C903563C2466C176000FE10B /* DMoyaLogPlugin.swift */; };
 		C924A7DC2455A22A003CD3B2 /* Demirciy.h in Headers */ = {isa = PBXBuildFile; fileRef = C924A7DA2455A22A003CD3B2 /* Demirciy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C94E58DD24575C0000CA5A7C /* DImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94E58DC24575C0000CA5A7C /* DImageView.swift */; };
 		C969F3642455A5A400968C53 /* DAssetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C969F3292455A5A000968C53 /* DAssetManager.swift */; };
@@ -103,6 +104,7 @@
 		7E3D31EEC7416C2E809BABDE /* Pods-Demirciy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demirciy.debug.xcconfig"; path = "Target Support Files/Pods-Demirciy/Pods-Demirciy.debug.xcconfig"; sourceTree = "<group>"; };
 		7FD73BEE6736877A60886878 /* Pods-Demirciy-DemirciyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demirciy-DemirciyTests.release.xcconfig"; path = "Target Support Files/Pods-Demirciy-DemirciyTests/Pods-Demirciy-DemirciyTests.release.xcconfig"; sourceTree = "<group>"; };
 		BA6F328A4F9B1B47D00AD761 /* Pods_Demirciy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demirciy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C903563C2466C176000FE10B /* DMoyaLogPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMoyaLogPlugin.swift; sourceTree = "<group>"; };
 		C924A7D72455A22A003CD3B2 /* Demirciy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Demirciy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C924A7DA2455A22A003CD3B2 /* Demirciy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demirciy.h; sourceTree = "<group>"; };
 		C924A7DB2455A22A003CD3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -353,6 +355,7 @@
 				C9C6080B24609A74008BFF94 /* DDynamicValue.swift */,
 				C969F35D2455A5A400968C53 /* DEnum.swift */,
 				C969F3332455A5A000968C53 /* DError.swift */,
+				C903563C2466C176000FE10B /* DMoyaLogPlugin.swift */,
 				C969F34D2455A5A300968C53 /* DUtil.swift */,
 				C9EFD2B92455B1FE00182EB6 /* Constants */,
 				C9EFD2BA2455B20400182EB6 /* Extensions */,
@@ -695,6 +698,7 @@
 				C969F3652455A5A400968C53 /* DView.swift in Sources */,
 				C969F3822455A5A400968C53 /* DNavigationController.swift in Sources */,
 				C969F3752455A5A400968C53 /* DVersionManager.swift in Sources */,
+				C903563D2466C176000FE10B /* DMoyaLogPlugin.swift in Sources */,
 				C969F3772455A5A400968C53 /* CustomStringConvertible+Extension.swift in Sources */,
 				C969F3762455A5A400968C53 /* DAppManager.swift in Sources */,
 				C969F3732455A5A400968C53 /* DTable.swift in Sources */,
