@@ -9,3 +9,12 @@
 import UIKit
 
 open class DScrollView: UIScrollView {}
+
+// MARK: - Public Functions
+public extension DScrollView {
+    
+    func paging() -> DScrollView {
+        isPagingEnabled = true
+        return self
+    }
+}

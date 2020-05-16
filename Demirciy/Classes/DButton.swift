@@ -19,6 +19,19 @@ public extension DButton {
         return self
     }
     
+    func image(imageName: String? = nil, tintColor: UIColor = UIColor.black, imageContentMode: UIView.ContentMode = UIView.ContentMode.scaleAspectFit, insets: UIEdgeInsets = UIEdgeInsets.zero) -> DButton {
+        setImage(imageName?.image(), for: UIControl.State.normal)
+        imageView?.tintColor = tintColor
+        imageView?.contentMode = imageContentMode
+        imageEdgeInsets = insets
+        return self
+    }
+    
+    func font(name: String, size: CGFloat) -> DButton {
+        titleLabel?.font = UIFont(name: name, size: size)
+        return self
+    }
+    
     func tapAnimation(_ completionBlock: @escaping() -> Void = {}) {
         isUserInteractionEnabled = false
         UIView.animate(withDuration: 0.1,

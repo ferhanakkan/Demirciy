@@ -42,6 +42,14 @@ public extension UIView {
         layer.cornerRadius = radius
     }
     
+    func cornerRadiusSpecific(corners: UIRectCorner, size: CGSize) {
+        let shape = CAShapeLayer()
+        shape.bounds = frame
+        shape.position = center
+        shape.path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: size).cgPath
+        layer.mask = shape
+    }
+    
     func circle() {
         clipsToBounds = true
         layer.cornerRadius = min(frame.width, frame.height) / 2
@@ -50,5 +58,14 @@ public extension UIView {
     func border(color: UIColor, width: CGFloat) {
         layer.borderColor = color.cgColor
         layer.borderWidth = width
+    }
+    
+    func shadow() {
+        layer.masksToBounds = false
+        let space: CGFloat = 4
+        let shadowRect = CGRect(x: -space, y: -(space / 2), width: bounds.width + (2 * space), height: bounds.height + (2 * space))
+        layer.shadowPath = UIBezierPath(roundedRect: shadowRect, cornerRadius: layer.cornerRadius).cgPath
+        layer.shadowOffset = CGSize.zero
+        layer.shadowOpacity = 0.05
     }
 }

@@ -80,6 +80,8 @@
 		C97667F42455EE6100877531 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97667F32455EE6100877531 /* UIFont+Extension.swift */; };
 		C97FEC922455F4B9002C6458 /* Demirciy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C924A7D72455A22A003CD3B2 /* Demirciy.framework */; platformFilter = ios; };
 		C97FEC9A2455F4D9002C6458 /* DLanguageManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97FEC992455F4D9002C6458 /* DLanguageManagerTests.swift */; };
+		C9860DCF246B3B7100863A5B /* DSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9860DCE246B3B7100863A5B /* DSegmentedControl.swift */; };
+		C9BD9011246712A5007C97D9 /* UICollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BD9010246712A5007C97D9 /* UICollectionViewCell+Extension.swift */; };
 		C9C60808246099F0008BFF94 /* DCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C60807246099EF008BFF94 /* DCollectionLayout.swift */; };
 		C9C6080A24609A1A008BFF94 /* DGenericDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C6080924609A1A008BFF94 /* DGenericDataSource.swift */; };
 		C9C6080C24609A74008BFF94 /* DDynamicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C6080B24609A74008BFF94 /* DDynamicValue.swift */; };
@@ -178,6 +180,8 @@
 		C97FEC8D2455F4B9002C6458 /* DemirciyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemirciyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97FEC912455F4B9002C6458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C97FEC992455F4D9002C6458 /* DLanguageManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLanguageManagerTests.swift; sourceTree = "<group>"; };
+		C9860DCE246B3B7100863A5B /* DSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSegmentedControl.swift; sourceTree = "<group>"; };
+		C9BD9010246712A5007C97D9 /* UICollectionViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
 		C9C60807246099EF008BFF94 /* DCollectionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCollectionLayout.swift; sourceTree = "<group>"; };
 		C9C6080924609A1A008BFF94 /* DGenericDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGenericDataSource.swift; sourceTree = "<group>"; };
 		C9C6080B24609A74008BFF94 /* DDynamicValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDynamicValue.swift; sourceTree = "<group>"; };
@@ -383,6 +387,7 @@
 				C969F34F2455A5A300968C53 /* Date+Extension.swift */,
 				C969F3542455A5A300968C53 /* TimeZone+Extension.swift */,
 				C97667EF2455EB7300877531 /* UICollectionView+Extension.swift */,
+				C9BD9010246712A5007C97D9 /* UICollectionViewCell+Extension.swift */,
 				C969F3452455A5A100968C53 /* UIColor+Extension.swift */,
 				C969F35E2455A5A400968C53 /* UIDevice+Extension.swift */,
 				C97667F32455EE6100877531 /* UIFont+Extension.swift */,
@@ -406,6 +411,7 @@
 				C94E58DC24575C0000CA5A7C /* DImageView.swift */,
 				C969F3302455A5A000968C53 /* DLabel.swift */,
 				C969F35B2455A5A400968C53 /* DScrollView.swift */,
+				C9860DCE246B3B7100863A5B /* DSegmentedControl.swift */,
 				C969F34B2455A5A300968C53 /* DStackView.swift */,
 				C969F3382455A5A000968C53 /* DTable.swift */,
 				C969F3502455A5A300968C53 /* DTextField.swift */,
@@ -651,6 +657,7 @@
 				C969F39C2455A5A400968C53 /* Data+Extension.swift in Sources */,
 				C969F3832455A5A400968C53 /* DControllerViewModel.swift in Sources */,
 				C97667EA2455C18500877531 /* DCollectionReusableView.swift in Sources */,
+				C9860DCF246B3B7100863A5B /* DSegmentedControl.swift in Sources */,
 				C969F38A2455A5A400968C53 /* Date+Extension.swift in Sources */,
 				C969F3932455A5A400968C53 /* DErrorModel.swift in Sources */,
 				C969F3662455A5A400968C53 /* DKeyboardManager.swift in Sources */,
@@ -700,6 +707,7 @@
 				C969F3752455A5A400968C53 /* DVersionManager.swift in Sources */,
 				C903563D2466C176000FE10B /* DMoyaLogPlugin.swift in Sources */,
 				C969F3772455A5A400968C53 /* CustomStringConvertible+Extension.swift in Sources */,
+				C9BD9011246712A5007C97D9 /* UICollectionViewCell+Extension.swift in Sources */,
 				C969F3762455A5A400968C53 /* DAppManager.swift in Sources */,
 				C969F3732455A5A400968C53 /* DTable.swift in Sources */,
 				C969F36D2455A5A400968C53 /* UIStackView+Extension.swift in Sources */,

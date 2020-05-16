@@ -14,6 +14,8 @@ open class DNavigationController: UINavigationController {
         super.viewDidLoad()
         
         initUI()
+        initLocale()
+        initTheme()
         addSubviews()
         addConstraints()
         observe()

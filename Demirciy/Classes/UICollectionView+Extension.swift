@@ -12,7 +12,7 @@ public extension UICollectionView {
     
     func register(_ cells: [UICollectionViewCell.Type]) {
         for cell in cells {
-            register(cell.self, forCellWithReuseIdentifier: String(describing: cell.self))
+            register(cell.self, forCellWithReuseIdentifier: cell.identifier)
         }
     }
     

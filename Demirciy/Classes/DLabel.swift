@@ -19,8 +19,18 @@ public extension DLabel {
         return self
     }
     
+    func font(name: String, size: CGFloat) -> DLabel {
+        font = UIFont(name: name, size: size)
+        return self
+    }
+    
     func center() -> DLabel {
-        self.textAlignment = NSTextAlignment.center
+        textAlignment = NSTextAlignment.center
+        return self
+    }
+    
+    func infiniteLine() -> DLabel {
+        numberOfLines = 0
         return self
     }
 }

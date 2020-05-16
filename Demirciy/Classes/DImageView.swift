@@ -18,4 +18,9 @@ public extension DImageView {
         self.tintColor = tintColor
         return self
     }
+    
+    func contentMode(_ mode: UIView.ContentMode) -> DImageView {
+        contentMode = mode
+        return self
+    }
 }
