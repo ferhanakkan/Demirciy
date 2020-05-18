@@ -18,8 +18,18 @@ public extension DTextField {
         return self
     }
     
-    func placeholder(placeholder: String?) -> DTextField {
-        self.placeholder = placeholder
+    func placeholder(placeholder: String?, color: UIColor? = nil) -> DTextField {
+        if let placeholder = placeholder, let color = color {
+            let attributedString = DAttributedString(string: placeholder)
+            if let font = font {
+                attributedString.font = font
+            }
+            attributedString.color = color
+            
+            attributedPlaceholder = attributedString.attributedString
+        } else {
+            self.placeholder = placeholder
+        }
         return self
     }
     

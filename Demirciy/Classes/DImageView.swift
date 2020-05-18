@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import SnapKit
 
-open class DImageView: UIImageView {}
+open class DImageView: UIImageView {
+    
+    // MARK: - Properties
+    public var maskView_: UIView?
+}
 
 // MARK: - Public Functions
 public extension DImageView {
@@ -22,5 +27,24 @@ public extension DImageView {
     func contentMode(_ mode: UIView.ContentMode) -> DImageView {
         contentMode = mode
         return self
+    }
+    
+    func addMaskView(_ view: UIView) -> DImageView {
+        removeMaskView()
+        
+        addSubviews([view])
+        
+        view.snp.makeConstraints { (maker) in
+            maker.edges.equalToSuperview()
+        }
+        
+        maskView_ = view
+        
+        return self
+    }
+    
+    func removeMaskView() {
+        maskView_?.removeFromSuperview()
+        maskView_ = nil
     }
 }
