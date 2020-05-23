@@ -8,7 +8,7 @@
 
 import Moya
 
-public class DMoyaLogPlugin: PluginType {
+open class DMoyaLogPlugin: PluginType {
     
     public init() {}
     

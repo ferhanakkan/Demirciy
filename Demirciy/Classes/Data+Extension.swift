@@ -15,4 +15,13 @@ public extension Data {
     func toString() -> String? {
         return String(data: self, encoding: String.Encoding.utf8)
     }
+    
+    func toDictionary() -> [String: Any?]? {
+        do {
+            return try JSONSerialization.jsonObject(with: self, options: []) as? [String: Any?]
+        } catch {
+            DLogManager.e(error.localizedDescription)
+            return nil
+        }
+    }
 }

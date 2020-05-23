@@ -28,7 +28,9 @@ public class DLogManager {
         return formatter
     }
     private static let logPrefix: String = "DLogManager:"
-    private static let dateFormat = "hh:mm:ss"
+    private static let dateFormat: String = "hh:mm:ss"
+    private static let maxRequestBodyValueLength: Int = 1000
+    private static let maxResponseLength: Int = 10000
     private static var isLoggingEnabled: Bool {
         #if DEBUG
         return true
@@ -116,8 +118,27 @@ public extension DLogManager {
         let headers: String = String(describing: urlRequest.headers)
         let httpMethod: String = urlRequest.httpMethod ?? "-no http method-"
         var parameters: String = ""
-        if let body = urlRequest.httpBody, let bodyString = body.toString() {
-            parameters = bodyString
+        
+        if let bodyData = urlRequest.httpBody, let body = bodyData.toDictionary() {
+            var parametersStrings: [String] = []
+            
+            for (_, value) in body.enumerated() {
+                if let valueValue = value.value {
+                    if let valueString: String = valueValue as? String {
+                        if valueString.count > DLogManager.maxRequestBodyValueLength {
+                            parametersStrings.append("\(value.key): \(valueString[0...DLogManager.maxRequestBodyValueLength])...")
+                        } else {
+                            parametersStrings.append("\(value.key): \(valueString)")
+                        }
+                    } else {
+                        parametersStrings.append("\(value.key): \(valueValue)")
+                    }
+                } else {
+                    parametersStrings.append("\(value.key): nil")
+                }
+            }
+            
+            parameters = parametersStrings.joined(separator: ", ")
         }
         
         var log: String = "[\(url)]"
@@ -170,7 +191,11 @@ public extension DLogManager {
             var log: String = "[\(url)]"
             
             if let json = dataJSON {
-                log = log + "\n[\(json)]"
+                if json.count > DLogManager.maxResponseLength {
+                    log = log + "\n[\(json[0...DLogManager.maxResponseLength])...]"
+                } else {
+                    log = log + "\n[\(json)]"
+                }
             }
             
             print("\(logPrefix) \n--- Response ---\n[\(Date().toString())] \n\(log) \n--- End ---\n")

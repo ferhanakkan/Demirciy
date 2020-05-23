@@ -33,9 +33,7 @@ extension DCameraManager: UIImagePickerControllerDelegate, UINavigationControlle
 
         if let editedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
             image = editedImage
-        }
-
-        if let originalImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+        } else if let originalImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             image = originalImage
         }
         
@@ -70,20 +68,22 @@ public extension DCameraManager {
         return promise
     }
     
-    func showCamera(controller: UIViewController) {
+    func showCamera(controller: UIViewController, allowsEditing: Bool = false) {
         if isShowing { return }
         isShowing = true
         
         imagePickerController.sourceType = UIImagePickerController.SourceType.camera
+        imagePickerController.allowsEditing = allowsEditing
         
         show(controller: controller)
     }
     
-    func showLibrary(controller: UIViewController) {
+    func showLibrary(controller: UIViewController, allowsEditing: Bool = false) {
         if isShowing { return }
         isShowing = true
         
         imagePickerController.sourceType = UIImagePickerController.SourceType.photoLibrary
+        imagePickerController.allowsEditing = allowsEditing
         
         show(controller: controller)
     }

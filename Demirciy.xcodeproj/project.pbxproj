@@ -80,7 +80,9 @@
 		C97667F42455EE6100877531 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97667F32455EE6100877531 /* UIFont+Extension.swift */; };
 		C97FEC922455F4B9002C6458 /* Demirciy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C924A7D72455A22A003CD3B2 /* Demirciy.framework */; platformFilter = ios; };
 		C97FEC9A2455F4D9002C6458 /* DLanguageManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97FEC992455F4D9002C6458 /* DLanguageManagerTests.swift */; };
+		C98351D924787C4A00CCB4FF /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98351D824787C4A00CCB4FF /* String+Extension.swift */; };
 		C9860DCF246B3B7100863A5B /* DSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9860DCE246B3B7100863A5B /* DSegmentedControl.swift */; };
+		C9B624BA2479A097007E3A96 /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B624B92479A097007E3A96 /* UIScreen+Extension.swift */; };
 		C9BD9011246712A5007C97D9 /* UICollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BD9010246712A5007C97D9 /* UICollectionViewCell+Extension.swift */; };
 		C9C60808246099F0008BFF94 /* DCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C60807246099EF008BFF94 /* DCollectionLayout.swift */; };
 		C9C6080A24609A1A008BFF94 /* DGenericDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C6080924609A1A008BFF94 /* DGenericDataSource.swift */; };
@@ -180,7 +182,9 @@
 		C97FEC8D2455F4B9002C6458 /* DemirciyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemirciyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97FEC912455F4B9002C6458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C97FEC992455F4D9002C6458 /* DLanguageManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLanguageManagerTests.swift; sourceTree = "<group>"; };
+		C98351D824787C4A00CCB4FF /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		C9860DCE246B3B7100863A5B /* DSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSegmentedControl.swift; sourceTree = "<group>"; };
+		C9B624B92479A097007E3A96 /* UIScreen+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
 		C9BD9010246712A5007C97D9 /* UICollectionViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
 		C9C60807246099EF008BFF94 /* DCollectionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCollectionLayout.swift; sourceTree = "<group>"; };
 		C9C6080924609A1A008BFF94 /* DGenericDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGenericDataSource.swift; sourceTree = "<group>"; };
@@ -385,6 +389,7 @@
 				C969F33C2455A5A100968C53 /* CustomStringConvertible+Extension.swift */,
 				C969F3612455A5A400968C53 /* Data+Extension.swift */,
 				C969F34F2455A5A300968C53 /* Date+Extension.swift */,
+				C98351D824787C4A00CCB4FF /* String+Extension.swift */,
 				C969F3542455A5A300968C53 /* TimeZone+Extension.swift */,
 				C97667EF2455EB7300877531 /* UICollectionView+Extension.swift */,
 				C9BD9010246712A5007C97D9 /* UICollectionViewCell+Extension.swift */,
@@ -393,6 +398,7 @@
 				C97667F32455EE6100877531 /* UIFont+Extension.swift */,
 				C969F33D2455A5A100968C53 /* UIImage+Extension.swift */,
 				C97667F12455EC7400877531 /* UIImageView+Extension.swift */,
+				C9B624B92479A097007E3A96 /* UIScreen+Extension.swift */,
 				C969F3312455A5A000968C53 /* UISearchBar+Extension.swift */,
 				C969F3322455A5A000968C53 /* UIStackView+Extension.swift */,
 				C97667E12455BD3E00877531 /* UIView+Extension.swift */,
@@ -704,6 +710,7 @@
 				C969F3912455A5A400968C53 /* DAppLifeCycleManager.swift in Sources */,
 				C969F3652455A5A400968C53 /* DView.swift in Sources */,
 				C969F3822455A5A400968C53 /* DNavigationController.swift in Sources */,
+				C98351D924787C4A00CCB4FF /* String+Extension.swift in Sources */,
 				C969F3752455A5A400968C53 /* DVersionManager.swift in Sources */,
 				C903563D2466C176000FE10B /* DMoyaLogPlugin.swift in Sources */,
 				C969F3772455A5A400968C53 /* CustomStringConvertible+Extension.swift in Sources */,
@@ -718,6 +725,7 @@
 				C97667EC2455C24F00877531 /* DAttributedString.swift in Sources */,
 				C969F3942455A5A400968C53 /* DTabBarController.swift in Sources */,
 				C969F3712455A5A400968C53 /* DLanguageModel.swift in Sources */,
+				C9B624BA2479A097007E3A96 /* UIScreen+Extension.swift in Sources */,
 				C969F38D2455A5A400968C53 /* DPushNotificationManager.swift in Sources */,
 				C969F3872455A5A400968C53 /* DTextView.swift in Sources */,
 			);

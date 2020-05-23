@@ -43,6 +43,6 @@ public extension DErrorModel {
 private extension DErrorModel {
     
     func isIgnoredError(_ messageKey: String) -> Bool {
-        return false
+        return messageKey == DError.parsing.rawValue
     }
 }

@@ -7,28 +7,27 @@
 //
 
 import UIKit
-//import SnapKit
+import SnapKit
 
 open class DLoadingController: DController {
     
     // MARK: - Properties
     let indicator: UIActivityIndicatorView = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.whiteLarge)
     
-//    open override func initUI() {
-//        super.initUI()
-//
-//        view.backgroundColor = UIColor.black.withAlphaComponent(0.7)
-//    }
-//
-//    open override func addSubviews() {
-//        view.addSubview(indicator)
-//    }
-//
-//    open override func addConstraints() {
-//        indicator.snp.makeConstraints { (maker) in
-//            maker.center.equalToSuperview()
-//            maker.height.width.equalTo(96)
-//        }
-//    }
-}
+    open override func initUI() {
+        super.initUI()
 
+        view.backgroundColor = UIColor.black.withAlphaComponent(0.7)
+    }
+
+    open override func addSubviews() {
+        view.addSubview(indicator)
+    }
+
+    open override func addConstraints() {
+        indicator.snp.makeConstraints { (maker) in
+            maker.center.equalToSuperview()
+            maker.height.width.equalTo(96)
+        }
+    }
+}

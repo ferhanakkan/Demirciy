@@ -33,5 +33,8 @@ public extension DConstant {
         
         public static let defaultTopOffset: CGFloat = DConstant.DUIConstant.safeAreaTopInset + 16
         public static let defaultBottomOffset: CGFloat = DConstant.DUIConstant.safeAreaBottomInset + 16
+        
+        public static let widescreenSize: CGSize = CGSize(width: 16, height: 9)
+        public static let widescreenRatio: CGFloat = 16 / 9
     }
 }
