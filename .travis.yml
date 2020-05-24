@@ -13,9 +13,9 @@
 # - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Demirciy.xcworkspace -scheme Demirciy -sdk iphonesimulator13.0 ONLY_ACTIVE_ARCH=NO | xcpretty
 # - pod lib lint
 
-osx_image: xcode11
+osx_image: xcode9
 language: swift
 xcode_project: Demirciy.xcodeproj
 xcode_scheme: Demirciy
-xcode_destination: platform=iOS Simulator,OS=13.0,name=iPhone 11
+xcode_destination: platform=iOS Simulator,OS=11.0,name=iPhone 8
 podfile: Podfile

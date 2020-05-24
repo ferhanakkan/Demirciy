@@ -1,5 +1,5 @@
 
-platform :ios, '13.0'
+platform :ios, '11.0'
 
 target 'Demirciy' do
   use_frameworks!
