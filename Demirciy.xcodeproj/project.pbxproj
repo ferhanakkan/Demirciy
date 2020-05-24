@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		52F522DC1560DCE65B3A15E4 /* Pods_Demirciy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7567EF9F0527C683AE597B4 /* Pods_Demirciy.framework */; };
-		6E5E9BE52341D80524AEB980 /* Pods_Demirciy_DemirciyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F31DC712E4B172F64EE72BC /* Pods_Demirciy_DemirciyTests.framework */; };
+		45E5DEF1F484DCCB296BB4A0 /* Pods_Demirciy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF3AA0CEDD50C6E46117F6B /* Pods_Demirciy.framework */; };
 		C903563D2466C176000FE10B /* DMoyaLogPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C903563C2466C176000FE10B /* DMoyaLogPlugin.swift */; };
 		C924A7DC2455A22A003CD3B2 /* Demirciy.h in Headers */ = {isa = PBXBuildFile; fileRef = C924A7DA2455A22A003CD3B2 /* Demirciy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C94E58DD24575C0000CA5A7C /* DImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94E58DC24575C0000CA5A7C /* DImageView.swift */; };
@@ -90,6 +89,7 @@
 		C9CE693B245608A000CB240A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9CE6938245608A000CB240A /* Localizable.strings */; };
 		C9DD5C052455A60E007B1BF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9DD5C022455A60E007B1BF5 /* Assets.xcassets */; };
 		C9DF43D92455A35C0063CBDF /* DController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DF43D62455A35C0063CBDF /* DController.swift */; };
+		ED40F45308995BDC9A6EC8BD /* Pods_Demirciy_DemirciyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9305C7C0D0C2E3AB7AEF7917 /* Pods_Demirciy_DemirciyTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,12 +103,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F31DC712E4B172F64EE72BC /* Pods_Demirciy_DemirciyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demirciy_DemirciyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		353E6DA7E6BDEEB5108FCD9B /* Pods-Demirciy-DemirciyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demirciy-DemirciyTests.debug.xcconfig"; path = "Target Support Files/Pods-Demirciy-DemirciyTests/Pods-Demirciy-DemirciyTests.debug.xcconfig"; sourceTree = "<group>"; };
-		51A06CEF09E43F7C8E3EF68F /* Pods-Demirciy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demirciy.debug.xcconfig"; path = "Target Support Files/Pods-Demirciy/Pods-Demirciy.debug.xcconfig"; sourceTree = "<group>"; };
-		B7567EF9F0527C683AE597B4 /* Pods_Demirciy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demirciy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFFB1E476574786EAD9C2D8E /* Pods-Demirciy-DemirciyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demirciy-DemirciyTests.release.xcconfig"; path = "Target Support Files/Pods-Demirciy-DemirciyTests/Pods-Demirciy-DemirciyTests.release.xcconfig"; sourceTree = "<group>"; };
-		C79A4798BBC3322B4A37C78E /* Pods-Demirciy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demirciy.release.xcconfig"; path = "Target Support Files/Pods-Demirciy/Pods-Demirciy.release.xcconfig"; sourceTree = "<group>"; };
+		14EB9EB959221366579C5386 /* Pods-Demirciy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demirciy.release.xcconfig"; path = "Target Support Files/Pods-Demirciy/Pods-Demirciy.release.xcconfig"; sourceTree = "<group>"; };
+		4FF3AA0CEDD50C6E46117F6B /* Pods_Demirciy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demirciy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5865AE51ACDAD24D97D0CB25 /* Pods-Demirciy-DemirciyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demirciy-DemirciyTests.release.xcconfig"; path = "Target Support Files/Pods-Demirciy-DemirciyTests/Pods-Demirciy-DemirciyTests.release.xcconfig"; sourceTree = "<group>"; };
+		7DEC352857D2D913CBDCDA8C /* Pods-Demirciy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demirciy.debug.xcconfig"; path = "Target Support Files/Pods-Demirciy/Pods-Demirciy.debug.xcconfig"; sourceTree = "<group>"; };
+		9305C7C0D0C2E3AB7AEF7917 /* Pods_Demirciy_DemirciyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demirciy_DemirciyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A68B7C9BF76E243755DE41F0 /* Pods-Demirciy-DemirciyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demirciy-DemirciyTests.debug.xcconfig"; path = "Target Support Files/Pods-Demirciy-DemirciyTests/Pods-Demirciy-DemirciyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C903563C2466C176000FE10B /* DMoyaLogPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMoyaLogPlugin.swift; sourceTree = "<group>"; };
 		C924A7D72455A22A003CD3B2 /* Demirciy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Demirciy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C924A7DA2455A22A003CD3B2 /* Demirciy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demirciy.h; sourceTree = "<group>"; };
@@ -201,7 +201,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52F522DC1560DCE65B3A15E4 /* Pods_Demirciy.framework in Frameworks */,
+				45E5DEF1F484DCCB296BB4A0 /* Pods_Demirciy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,18 +210,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C97FEC922455F4B9002C6458 /* Demirciy.framework in Frameworks */,
-				6E5E9BE52341D80524AEB980 /* Pods_Demirciy_DemirciyTests.framework in Frameworks */,
+				ED40F45308995BDC9A6EC8BD /* Pods_Demirciy_DemirciyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2D7B0E32BFF9A95BE1289925 /* Frameworks */ = {
+		009F34EFF189AE262269D672 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B7567EF9F0527C683AE597B4 /* Pods_Demirciy.framework */,
-				0F31DC712E4B172F64EE72BC /* Pods_Demirciy_DemirciyTests.framework */,
+				4FF3AA0CEDD50C6E46117F6B /* Pods_Demirciy.framework */,
+				9305C7C0D0C2E3AB7AEF7917 /* Pods_Demirciy_DemirciyTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -229,10 +229,10 @@
 		421B14196EBE70365D2BE7E2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				51A06CEF09E43F7C8E3EF68F /* Pods-Demirciy.debug.xcconfig */,
-				C79A4798BBC3322B4A37C78E /* Pods-Demirciy.release.xcconfig */,
-				353E6DA7E6BDEEB5108FCD9B /* Pods-Demirciy-DemirciyTests.debug.xcconfig */,
-				BFFB1E476574786EAD9C2D8E /* Pods-Demirciy-DemirciyTests.release.xcconfig */,
+				7DEC352857D2D913CBDCDA8C /* Pods-Demirciy.debug.xcconfig */,
+				14EB9EB959221366579C5386 /* Pods-Demirciy.release.xcconfig */,
+				A68B7C9BF76E243755DE41F0 /* Pods-Demirciy-DemirciyTests.debug.xcconfig */,
+				5865AE51ACDAD24D97D0CB25 /* Pods-Demirciy-DemirciyTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -244,7 +244,7 @@
 				C97FEC8E2455F4B9002C6458 /* DemirciyTests */,
 				C924A7D82455A22A003CD3B2 /* Products */,
 				421B14196EBE70365D2BE7E2 /* Pods */,
-				2D7B0E32BFF9A95BE1289925 /* Frameworks */,
+				009F34EFF189AE262269D672 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -491,7 +491,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C924A7DF2455A22A003CD3B2 /* Build configuration list for PBXNativeTarget "Demirciy" */;
 			buildPhases = (
-				EA7063E5B078EADC94163CC8 /* [CP] Check Pods Manifest.lock */,
+				05A18D452694469A0E380408 /* [CP] Check Pods Manifest.lock */,
 				C924A7D22455A22A003CD3B2 /* Headers */,
 				C924A7D32455A22A003CD3B2 /* Sources */,
 				C924A7D42455A22A003CD3B2 /* Frameworks */,
@@ -510,11 +510,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C97FEC952455F4B9002C6458 /* Build configuration list for PBXNativeTarget "DemirciyTests" */;
 			buildPhases = (
-				EC3864926BCAAF44B6AF6988 /* [CP] Check Pods Manifest.lock */,
+				8B3E958DB152C2017A6B91B5 /* [CP] Check Pods Manifest.lock */,
 				C97FEC892455F4B9002C6458 /* Sources */,
 				C97FEC8A2455F4B9002C6458 /* Frameworks */,
 				C97FEC8B2455F4B9002C6458 /* Resources */,
-				618DC16B4D4EFDA0C9166965 /* [CP] Embed Pods Frameworks */,
+				97630F59DC83C7B5D7F91B9E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -584,24 +584,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		618DC16B4D4EFDA0C9166965 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Demirciy-DemirciyTests/Pods-Demirciy-DemirciyTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Demirciy-DemirciyTests/Pods-Demirciy-DemirciyTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Demirciy-DemirciyTests/Pods-Demirciy-DemirciyTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EA7063E5B078EADC94163CC8 /* [CP] Check Pods Manifest.lock */ = {
+		05A18D452694469A0E380408 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -623,7 +606,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EC3864926BCAAF44B6AF6988 /* [CP] Check Pods Manifest.lock */ = {
+		8B3E958DB152C2017A6B91B5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -643,6 +626,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97630F59DC83C7B5D7F91B9E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demirciy-DemirciyTests/Pods-Demirciy-DemirciyTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demirciy-DemirciyTests/Pods-Demirciy-DemirciyTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Demirciy-DemirciyTests/Pods-Demirciy-DemirciyTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -815,7 +815,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -873,7 +873,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -887,7 +887,7 @@
 		};
 		C924A7E02455A22A003CD3B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51A06CEF09E43F7C8E3EF68F /* Pods-Demirciy.debug.xcconfig */;
+			baseConfigurationReference = 7DEC352857D2D913CBDCDA8C /* Pods-Demirciy.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -915,7 +915,7 @@
 		};
 		C924A7E12455A22A003CD3B2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C79A4798BBC3322B4A37C78E /* Pods-Demirciy.release.xcconfig */;
+			baseConfigurationReference = 14EB9EB959221366579C5386 /* Pods-Demirciy.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -943,7 +943,7 @@
 		};
 		C97FEC962455F4B9002C6458 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 353E6DA7E6BDEEB5108FCD9B /* Pods-Demirciy-DemirciyTests.debug.xcconfig */;
+			baseConfigurationReference = A68B7C9BF76E243755DE41F0 /* Pods-Demirciy-DemirciyTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WL6ERJVJSX;
@@ -962,7 +962,7 @@
 		};
 		C97FEC972455F4B9002C6458 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFFB1E476574786EAD9C2D8E /* Pods-Demirciy-DemirciyTests.release.xcconfig */;
+			baseConfigurationReference = 5865AE51ACDAD24D97D0CB25 /* Pods-Demirciy-DemirciyTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WL6ERJVJSX;
