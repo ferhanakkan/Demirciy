@@ -12,8 +12,7 @@ import SnapKit
 open class DLoadingController: DController {
     
     // MARK: - Properties
-//    let indicator: UIActivityIndicatorView = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
-    let indicator: UIActivityIndicatorView = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.whiteLarge)
+    let indicator: UIActivityIndicatorView = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
     
     open override func initUI() {
         super.initUI()
