@@ -17,5 +17,5 @@ osx_image: xcode11
 language: swift
 xcode_project: Demirciy.xcodeproj
 xcode_scheme: Demirciy
-xcode_destination: platform=iOS Simulator,OS=13.0,name=iPhone X
+xcode_destination: platform=iOS Simulator,OS=13.0,name=iPhone 11
 podfile: Podfile
