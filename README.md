@@ -1,6 +1,6 @@
 # Demirciy
 
-[![CI Status](https://img.shields.io/travis/Yusuf Demirci/Demirciy.svg?style=flat)](https://travis-ci.org/Yusuf Demirci/Demirciy)
+[![CI Status](https://img.shields.io/travis/demirciy/Demirciy.svg?style=flat)](https://travis-ci.org/demirciy/Demirciy)
 [![Version](https://img.shields.io/cocoapods/v/Demirciy.svg?style=flat)](https://cocoapods.org/pods/Demirciy)
 [![License](https://img.shields.io/cocoapods/l/Demirciy.svg?style=flat)](https://cocoapods.org/pods/Demirciy)
 [![Platform](https://img.shields.io/cocoapods/p/Demirciy.svg?style=flat)](https://cocoapods.org/pods/Demirciy)
@@ -10,6 +10,10 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+- iOS 13+
+- Swift 5+
+- Xcode 11+
 
 ## Installation
 
