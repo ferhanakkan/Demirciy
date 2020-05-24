@@ -17,18 +17,10 @@ public extension DConstant {
         public static let animationDurationVeryFast: TimeInterval = TimeInterval(0.075)
         
         public static var safeAreaTopInset: CGFloat {
-            if #available(iOS 11.0, *) {
-                return UIApplication.shared.keyWindow?.safeAreaInsets.top ?? 0
-            } else {
-                return 0
-            }
+            return DAppManager.shared.keyWindow?.safeAreaInsets.top ?? 0
         }
         public static var safeAreaBottomInset: CGFloat {
-            if #available(iOS 11.0, *) {
-                return UIApplication.shared.keyWindow?.safeAreaInsets.bottom ?? 0
-            } else {
-                return 0
-            }
+            return DAppManager.shared.keyWindow?.safeAreaInsets.bottom ?? 0
         }
         
         public static let defaultTopOffset: CGFloat = DConstant.DUIConstant.safeAreaTopInset + 16

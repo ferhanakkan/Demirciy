@@ -35,7 +35,7 @@ public extension DLoadingManager {
         lastShowedDate = Date()
         
         controller.indicator.startAnimating()
-        UIApplication.shared.keyWindow?.addSubview(controller.view)
+        DAppManager.shared.keyWindow?.addSubview(controller.view)
         
         UIView.animate(withDuration: DConstant.DUIConstant.animationDurationFast) {
             self.controller.view.alpha = 1

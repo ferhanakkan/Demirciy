@@ -38,10 +38,10 @@ DEPENDENCIES:
   - Moya (= 14.0.0)
   - PromiseKit (= 6.13.1)
   - PromiseKit/UIKit
-  - RxCocoa (= 5.1.1)
-  - RxGesture (= 3.0.2)
-  - RxLocalizer (= 1.5.0)
-  - RxSwift (= 5.1.1)
+  - RxCocoa
+  - RxGesture
+  - RxLocalizer
+  - RxSwift
   - RxTheme (= 4.0.0)
   - SnapKit (= 5.0.1)
 
@@ -72,6 +72,6 @@ SPEC CHECKSUMS:
   RxTheme: 0b642f47c7d197a803c6b9c083964188c34f7ddb
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: ff24b137afa9fca103080c5936fff20fb8b933d6
+PODFILE CHECKSUM: 359b5dec8f1367f45b183842aaccb5ead91af830
 
 COCOAPODS: 1.9.1

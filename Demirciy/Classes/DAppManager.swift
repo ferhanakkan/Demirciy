@@ -13,6 +13,14 @@ public class DAppManager {
     // MARK: - Properties
     public static let shared: DAppManager = DAppManager()
     
+    var keyWindow: UIWindow? {
+        return UIApplication.shared.connectedScenes
+            .filter({ $0.activationState == UIScene.ActivationState.foregroundActive })
+            .map({ $0 as? UIWindowScene })
+            .compactMap({ $0 })
+            .first?.windows.filter({ $0.isKeyWindow }).first
+    }
+    
     private init() {
         // Hides auto-layout error logs
 //        UserDefaults.standard.set(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")
