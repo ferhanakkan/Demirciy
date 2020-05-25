@@ -11,20 +11,23 @@ podfile: Podfile
 # cache: cocoapods
 
 notifications:
+  slack: demirciy:pzu0mBJfP9CAy16arOxASvjF
   email:
-    - demirciy94@gmail.com
+    recipients:
+      - demirciy94@gmail.com
+    on_success: never
+    on_failure: always
 
 before_install:
 - brew update
-- gem install fastlane
 - gem install cocoapods
 - pod install
 
 script:
 - pod lib lint
  
-after_success:
-- fastlane test
+# after_success:
+# - fastlane test
 
 # branches:
 #   only:

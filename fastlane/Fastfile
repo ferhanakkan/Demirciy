@@ -9,6 +9,6 @@ platform :ios do
     run_tests(workspace: 'Demirciy.xcworkspace',
       scheme: 'DemirciyTest',
       slack_url: 'https://hooks.slack.com/services/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',
-      slack_channel: '#fastlane')
+      slack_channel: '#notification')
   end
 end
