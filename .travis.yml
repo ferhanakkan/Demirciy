@@ -25,7 +25,7 @@ before_install:
 
 script:
 # - set -o pipefail && xcodebuild -workspace Demirciy.xcworkspace -scheme Demirciy -destination platform=iOS Simulator,OS=13.0,name=iPhone 11 build test | xcpretty
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Demirciy.xcworkspace -scheme Demirciy -sdk iphonesimulator13.0,name=iPhone 11 ONLY_ACTIVE_ARCH=NO | xcpretty
+- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Demirciy.xcworkspace -scheme Demirciy -sdk name=iPhone 11,OS=13.0 ONLY_ACTIVE_ARCH=NO | xcpretty
 # - pod lib lint
 # - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Demirciy.xcworkspace -scheme Demirciy -sdk iphonesimulator13.0 ONLY_ACTIVE_ARCH=NO | xcpretty
 # - xcodebuild clean build
