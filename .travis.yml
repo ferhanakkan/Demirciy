@@ -29,9 +29,9 @@ script:
 # after_success:
 # - fastlane test
 
-# branches:
-#   only:
-#   - master
+branches:
+  only:
+    - development
 
 # script:
 # - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Demirciy.xcworkspace -scheme Demirciy -sdk iphonesimulator13.0 ONLY_ACTIVE_ARCH=NO | xcpretty
