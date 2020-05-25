@@ -24,6 +24,7 @@ before_install:
 - pod install
 
 script:
+- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Demirciy.xcworkspace -scheme Demirciy ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint
  
 # after_success:
@@ -33,6 +34,4 @@ branches:
   only:
     - development
 
-# script:
-# - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Demirciy.xcworkspace -scheme Demirciy -sdk iphonesimulator13.0 ONLY_ACTIVE_ARCH=NO | xcpretty
-# - pod lib lint
+    # - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Demirciy.xcworkspace -scheme Demirciy -sdk iphonesimulator13.0 ONLY_ACTIVE_ARCH=NO | xcpretty
