@@ -8,7 +8,7 @@ platform :ios do
   lane :test do
     run_tests(workspace: 'Demirciy.xcworkspace',
       scheme: 'DemirciyTest',
-      slack_url: 'https://hooks.slack.com/services/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',
+      slack_url: 'https://hooks.slack.com/services/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',
       slack_channel: '#fastlane')
   end
 end
