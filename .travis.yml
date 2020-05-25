@@ -4,9 +4,9 @@
 
 osx_image: xcode11.4
 language: swift
-# xcode_workspace: Demirciy.xcworkspace
-# xcode_scheme: Demirciy
-# xcode_destination: platform=iOS Simulator,OS=13.0,name=iPhone 11
+xcode_workspace: Demirciy.xcworkspace
+xcode_scheme: Demirciy
+xcode_destination: platform=iOS Simulator,OS=13.0,name=iPhone 11
 podfile: Podfile
 # cache: cocoapods
 
@@ -23,11 +23,11 @@ before_install:
 - gem install cocoapods
 - pod install
 
-script:
+# script:
 # - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Demirciy.xcworkspace -scheme Demirciy -sdk iphonesimulator13.0 ONLY_ACTIVE_ARCH=NO | xcpretty
 # - xcodebuild clean build
 # - xcodebuild clean build -workspace Demirciy.xcworkspace -scheme Demirciy -sdk iphonesimulator13.0
-- xcodebuild build -workspace Demirciy.xcworkspace -scheme 'Demirciy' -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.0'
+# - xcodebuild clean build -workspace Demirciy.xcworkspace -scheme 'Demirciy' -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.0'
 # - pod lib lint
  
 # after_success:
