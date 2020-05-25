@@ -7,9 +7,8 @@ platform :ios do
   desc 'Run test'
   lane :test do
     run_tests(workspace: 'Demirciy.xcworkspace',
-      scheme: 'DemirciyTests',
-      # devices: ['iPhone 8'],
-      slack_url: 'https://hooks.slack.com/services/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',
+      scheme: 'DemirciyTest',
+      slack_url: 'https://hooks.slack.com/services/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',
       slack_channel: '#fastlane')
   end
 end
