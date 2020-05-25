@@ -1,6 +1,6 @@
 # Demirciy
 
-[![CI Status](https://img.shields.io/travis/demirciy/Demirciy.svg?style=flat)](https://travis-ci.org/demirciy/Demirciy)
+[![CI Status](https://img.shields.io/travis/demirciy/Demirciy.svg?style=flat)](https://travis-ci.com/demirciy/Demirciy)
 [![Version](https://img.shields.io/cocoapods/v/Demirciy.svg?style=flat)](https://cocoapods.org/pods/Demirciy)
 [![License](https://img.shields.io/cocoapods/l/Demirciy.svg?style=flat)](https://cocoapods.org/pods/Demirciy)
 [![Platform](https://img.shields.io/cocoapods/p/Demirciy.svg?style=flat)](https://cocoapods.org/pods/Demirciy)
