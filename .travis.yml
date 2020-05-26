@@ -1,13 +1,21 @@
-# references:
-# * https://www.objc.io/issues/6-build-tools/travis-ci/
-# * https://github.com/supermarin/xcpretty#usage
 
 osx_image: xcode11.4
 language: swift
 xcode_workspace: Demirciy.xcworkspace
-xcode_scheme: Demirciy
-xcode_destination: platform=iOS Simulator,OS=13.0,name=iPhone 11
+xcode_destination: platform=iOS Simulator,name=iPhone 11
 podfile: Podfile
+
+before_install:
+- brew update
+- pod install
+
+jobs:
+  include:
+    - name: 'Build & Test Example'
+      xcode_scheme: Demirciy
+    - name: 'Pod library lint'
+      script: 
+      - pod lib lint Demirciy.podspec
 
 notifications:
   slack: demirciy:pzu0mBJfP9CAy16arOxASvjF
@@ -16,10 +24,6 @@ notifications:
       - demirciy94@gmail.com
     on_success: never
     on_failure: always
-
-before_install:
-- brew update
-- pod install
 
 branches:
   only:

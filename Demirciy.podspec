@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://yusufdemirci.dev'
 
   s.ios.deployment_target = '13.0'
-  s.swift_version = "5.0"
+  s.swift_version = '5.0'
 
   s.source_files = 'Demirciy/Classes/**/*'
   s.resources = 'Demirciy/Resources/*'
