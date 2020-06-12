@@ -15,8 +15,7 @@ public class DCameraManager: NSObject {
     public static let shared: DCameraManager = DCameraManager()
     
     public var didDismiss: ((_ image: UIImage?) -> Void)?
-    private let imagePickerController = UIImagePickerController()
-    private var isShowing: Bool = false
+    private let imagePickerController: DImagePickerController = DImagePickerController()
     
     private override init() {
         super.init()
@@ -69,9 +68,6 @@ public extension DCameraManager {
     }
     
     func showCamera(controller: UIViewController, allowsEditing: Bool = false) {
-        if isShowing { return }
-        isShowing = true
-        
         imagePickerController.sourceType = UIImagePickerController.SourceType.camera
         imagePickerController.allowsEditing = allowsEditing
         
@@ -79,9 +75,6 @@ public extension DCameraManager {
     }
     
     func showLibrary(controller: UIViewController, allowsEditing: Bool = false) {
-        if isShowing { return }
-        isShowing = true
-        
         imagePickerController.sourceType = UIImagePickerController.SourceType.photoLibrary
         imagePickerController.allowsEditing = allowsEditing
         
@@ -107,7 +100,6 @@ private extension DCameraManager {
     
     func dismissCamera(image: UIImage?) {
         imagePickerController.dismiss(animated: true) {
-            self.isShowing = false
             self.didDismiss?(image)
         }
     }

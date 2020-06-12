@@ -30,6 +30,7 @@ public extension DTextField {
         } else {
             self.placeholder = placeholder
         }
+        
         return self
     }
     

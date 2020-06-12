@@ -10,7 +10,11 @@ public extension DConstant {
     
     class DDateConstant {
         
-        public static let dateFormatyyyyMMddHHmmssSSSZ: String = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'" // "2020-04-14T11:21:09.347
-        public static let dateFormatddMMyyyyHHmm: String = "dd.MM.yyyy HH:mm"
+        public static let dateSeparator: String = "/"
+        public static let timeSeparator: String = ":"
+        
+        public static let dateFormat_yyyyMMddHHmmssSSSZ: String = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'" // "2020-04-14T11:21:09.347
+        public static let dateFormat_ddMMyyyyHHmm: String = "dd\(DConstant.DDateConstant.dateSeparator)MM\(DConstant.DDateConstant.dateSeparator)yyyy HH\(DConstant.DDateConstant.timeSeparator)mm"
+        public static let dateFormat_ddMMyyyy: String = "dd\(DConstant.DDateConstant.dateSeparator)MM\(DConstant.DDateConstant.dateSeparator)yyyy"
     }
 }

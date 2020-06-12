@@ -30,10 +30,10 @@ Pod::Spec.new do |s|
   s.dependency 'PromiseKit/UIKit'
   s.dependency 'RxSwift', '5.1.1'
   s.dependency 'RxCocoa', '5.1.1'
-  s.dependency 'RxGesture', '3.0.2'
+  s.dependency 'RxGesture'
   # s.dependency 'RxAlamofire', '5.2.0'
   # s.dependency 'RxDataSources', '4.0.1'
-  s.dependency 'RxLocalizer', '1.5.0'
-  s.dependency 'RxTheme', '4.0.0'
+  s.dependency 'RxLocalizer'
+  s.dependency 'RxTheme'
   s.dependency 'SnapKit', '5.0.1'
 end

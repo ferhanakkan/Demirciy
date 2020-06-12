@@ -14,6 +14,8 @@ open class DCollectionReusableView: UICollectionReusableView {
         super.init(frame: frame)
         
         initUI()
+        initLocale()
+        initTheme()
         addSubviews()
         addConstraints()
         observe()

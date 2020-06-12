@@ -35,3 +35,9 @@ public enum DAxis {
     case vertical
     case horizontal
 }
+
+// MARK: - DSort
+public enum DSort {
+    case ascending
+    case descending
+}

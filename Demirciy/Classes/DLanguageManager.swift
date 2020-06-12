@@ -14,7 +14,7 @@ public class DLanguageManager {
     // MARK: - Properties
     public static let shared: DLanguageManager = DLanguageManager()
     
-    var language: String {
+    public var language: String {
         return Localizer.shared.currentLanguageCodeValue ?? UserDefaults.standard.stringArray(forKey: "AppleLanguages")?.first ?? DLanguage.en.rawValue
     }
 }

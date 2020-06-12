@@ -11,7 +11,7 @@ import UIKit
 @objc extension UIViewController {
     
     open func initUI() {
-        DLogManager.custom("Showing Controller: \(String(describing: self.classForCoder))")
+        DLogManager.custom("Showing Controller: \(screenName)")
         
         view.backgroundColor = UIColor.white
         hideKeyboardWhenTappedAround()
@@ -29,6 +29,10 @@ import UIKit
 }
 
 public extension UIViewController {
+    
+    var screenName: String {
+        return String(describing: self.classForCoder)
+    }
     
     var isViewActive: Bool {
         return view.window != nil

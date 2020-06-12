@@ -23,6 +23,10 @@ open class DController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    deinit {
+        DLogManager.custom("Deinited Controller: \(screenName)")
+    }
+    
     open override func viewDidLoad() {
         super.viewDidLoad()
         

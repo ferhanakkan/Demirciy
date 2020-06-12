@@ -21,13 +21,19 @@ open class DLoadingController: DController {
     }
 
     open override func addSubviews() {
+        super.addSubviews()
+        
         view.addSubview(indicator)
     }
 
     open override func addConstraints() {
+        super.addConstraints()
+        
         indicator.snp.makeConstraints { (maker) in
             maker.center.equalToSuperview()
             maker.height.width.equalTo(96)
         }
+        
+        view.layoutIfNeeded()
     }
 }

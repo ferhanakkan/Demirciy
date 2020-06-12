@@ -1,5 +1,5 @@
 //
-//  DStackView.swift
+//  DStack.swift
 //  DemirciyFramework
 //
 //  Created by Yusuf Demirci on 10.12.2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class DStackView: UIStackView {
+open class DStack: UIStackView {
     
     public convenience init(alignment: UIStackView.Alignment = UIStackView.Alignment.fill, distribution: UIStackView.Distribution = UIStackView.Distribution.fillEqually, axis: NSLayoutConstraint.Axis, spacing: CGFloat) {
         self.init(frame: CGRect.zero)
@@ -21,7 +21,7 @@ open class DStackView: UIStackView {
 }
 
 // MARK: - Public Functions
-public extension DStackView {
+public extension DStack {
     
     func addArrangedSubviews(_ subviews: [UIView]) {
         for subview in subviews {

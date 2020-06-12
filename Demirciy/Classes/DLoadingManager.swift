@@ -18,7 +18,7 @@ public class DLoadingManager {
     private var lastShowedDate: Date = Date()
     private let minShowingSeconds: Int = 1
     private var elapsedSecondsSinceLastShowed: Int {
-        return lastShowedDate.totalDistance(from: Date(), resultIn: Calendar.Component.second) ?? 0
+        return lastShowedDate.totalDistance(to: Date(), resultIn: Calendar.Component.second) ?? 0
     }
     
     private init() {
