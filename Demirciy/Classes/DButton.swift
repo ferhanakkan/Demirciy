@@ -32,6 +32,11 @@ public extension DButton {
         return self
     }
     
+    func font(_ font: UIFont) -> DButton {
+        titleLabel?.font = font
+        return self
+    }
+    
     func tapAnimation(_ completionBlock: @escaping() -> Void = {}) {
         isUserInteractionEnabled = false
         UIView.animate(withDuration: 0.1,

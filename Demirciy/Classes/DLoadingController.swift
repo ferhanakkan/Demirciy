@@ -12,12 +12,13 @@ import SnapKit
 open class DLoadingController: DController {
     
     // MARK: - Properties
-    let indicator: UIActivityIndicatorView = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
+    public let indicator: UIActivityIndicatorView = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
     
     open override func initUI() {
         super.initUI()
 
         view.backgroundColor = UIColor.black.withAlphaComponent(0.7)
+        indicator.color = UIColor.white
     }
 
     open override func addSubviews() {

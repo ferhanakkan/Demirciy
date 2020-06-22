@@ -24,6 +24,11 @@ public extension DLabel {
         return self
     }
     
+    func font(_ font: UIFont) -> DLabel {
+        self.font = font
+        return self
+    }
+    
     func center() -> DLabel {
         textAlignment = NSTextAlignment.center
         return self

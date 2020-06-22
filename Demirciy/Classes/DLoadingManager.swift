@@ -13,8 +13,11 @@ public class DLoadingManager {
     // MARK: - Properties
     public static let shared: DLoadingManager = DLoadingManager()
     
-    private let controller: DLoadingController = DLoadingController()
-    private var isShowing: Bool = false
+    public let controller: DLoadingController = DLoadingController()
+    public var isShowing: Bool {
+        return isShowing_
+    }
+    private var isShowing_: Bool = false
     private var lastShowedDate: Date = Date()
     private let minShowingSeconds: Int = 1
     private var elapsedSecondsSinceLastShowed: Int {
@@ -30,8 +33,8 @@ public class DLoadingManager {
 public extension DLoadingManager {
     
     func show() {
-        if isShowing { return }
-        isShowing = true
+        if isShowing_ { return }
+        isShowing_ = true
         lastShowedDate = Date()
         
         controller.indicator.startAnimating()
@@ -63,7 +66,7 @@ private extension DLoadingManager {
         }, completion: { (_) in
             self.controller.indicator.stopAnimating()
             self.controller.view.removeFromSuperview()
-            self.isShowing = false
+            self.isShowing_ = false
         })
     }
 }

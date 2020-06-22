@@ -14,6 +14,8 @@ open class DTabBarController: UITabBarController {
         super.viewDidLoad()
         
         initUI()
+        initLocale()
+        initTheme()
         addSubviews()
         addConstraints()
         observe()

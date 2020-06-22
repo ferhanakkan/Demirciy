@@ -8,4 +8,18 @@
 
 import UIKit
 
-open class DTable: UITableView {}
+open class DTable: UITableView {
+    
+    public convenience init(style: UITableView.Style) {
+        self.init(frame: .zero, style: style)
+    }
+}
+
+// MARK: - Public Functions
+public extension DTable {
+    
+    func hideSeparator() -> DTable {
+        separatorStyle = .none
+        return self
+    }
+}

@@ -13,7 +13,7 @@ open class DPicker: UIPickerView {
     // MARK: - Properties
     public var items: [[String]] = [] {
         didSet {
-            reloadAllComponents()
+            reload()
         }
     }
     public var textColor: UIColor? {
@@ -22,6 +22,7 @@ open class DPicker: UIPickerView {
             setValue(textColor, forKeyPath: "textColor")
         }
     }
+    public var isSeparatorsHidden: Bool = false
     public var didSelectRow: ((_ component: Int, _ row: Int) -> Void)?
     
     public override init(frame: CGRect) {
@@ -57,5 +58,21 @@ extension DPicker: UIPickerViewDelegate {
     
     public func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         didSelectRow?(component, row)
+    }
+}
+
+// MARK: - Private Functions
+private extension DPicker {
+    
+    func reload() {
+        reloadAllComponents()
+        setSeparatorsVisibility(!isSeparatorsHidden)
+    }
+    
+    func setSeparatorsVisibility(_ isVisible: Bool) {
+        guard subviews.count > 2 else { return }
+        
+        subviews[1].isHidden = !isVisible
+        subviews[2].isHidden = !isVisible
     }
 }

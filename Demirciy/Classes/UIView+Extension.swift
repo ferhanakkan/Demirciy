@@ -60,12 +60,11 @@ public extension UIView {
         layer.borderWidth = width
     }
     
-    func shadow() {
+    func shadow(space: CGFloat = 4, shadowOpacity: Float = 0.05) {
         layer.masksToBounds = false
-        let space: CGFloat = 4
         let shadowRect = CGRect(x: -space, y: -(space / 2), width: bounds.width + (2 * space), height: bounds.height + (2 * space))
         layer.shadowPath = UIBezierPath(roundedRect: shadowRect, cornerRadius: layer.cornerRadius).cgPath
         layer.shadowOffset = CGSize.zero
-        layer.shadowOpacity = 0.05
+        layer.shadowOpacity = shadowOpacity
     }
 }
