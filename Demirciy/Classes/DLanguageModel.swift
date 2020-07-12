@@ -6,19 +6,31 @@
 //  Copyright © 2020 Yusuf Demirci. All rights reserved.
 //
 
-public class DLanguageModel: DModel {
+public struct DLanguageModel {
     
     // MARK: - Properties
     public var code: String
     public var longCode: String
     public var name: String
     
-    public init(code: String) {
+    public init(code: String, longCode: String, name: String) {
         self.code = code
-        
-        let language = DLanguage(rawValue: code)!
-        longCode = language.getLongCode()
-        name = language.getName()
+        self.longCode = longCode
+        self.name = name
+    }
+}
+
+// MARK: - Public Functions
+public extension DLanguageModel {
+    
+    static func english() -> DLanguageModel {
+        let en = DLanguage.en
+        return DLanguageModel(code: en.rawValue, longCode: en.getLongCode(), name: en.getName())
+    }
+    
+    static func turkish() -> DLanguageModel {
+        let tr = DLanguage.tr
+        return DLanguageModel(code: tr.rawValue, longCode: tr.getLongCode(), name: tr.getName())
     }
 }
 
@@ -44,3 +56,4 @@ public enum DLanguage: String {
         }
     }
 }
+

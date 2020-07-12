@@ -20,7 +20,7 @@ public extension DLocationManager {
     
     func locationDeniedErrorAlert(controller: UIViewController?, cancelCompletion: @escaping() -> Void = {}) {
         DAlertManager.showConfirm(title: "DGeneral_locationPermissionDeniedAlertTitle".dLocalized(), message: "DGeneral_locationPermissionDeniedAlertMessage".dLocalized(), confirmButtonTitle: "DGeneral_locationPermissionDeniedAlertGoSettings".dLocalized(), controller: controller, confirmAction: {
-            DAppManager.shared.showAppSettings()
+            DAppManager.showAppSettings()
         }) {
             cancelCompletion()
         }

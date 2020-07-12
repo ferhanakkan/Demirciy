@@ -18,9 +18,11 @@ open class DImageView: UIImageView {
 // MARK: - Public Functions
 public extension DImageView {
     
-    func image(imageName: String, tintColor: UIColor = UIColor.black, insets: UIEdgeInsets = UIEdgeInsets.zero) -> DImageView {
+    func image(imageName: String, tintColor: UIColor? = nil, insets: UIEdgeInsets = UIEdgeInsets.zero) -> DImageView {
         self.image = imageName.image()?.withAlignmentRectInsets(insets)
-        self.tintColor = tintColor
+        if let tintColor_ = tintColor {
+            self.tintColor = tintColor_
+        }
         return self
     }
     

@@ -84,7 +84,7 @@ public extension DCameraManager {
     func cameraDeniedErrorAlert(controller: UIViewController?, confirmCompletion: @escaping() -> Void = {}, cancelCompletion: @escaping() -> Void = {}) {
         DAlertManager.showConfirm(title: "DGeneral_cameraPermissionDeniedAlertTitle".dLocalized(), message: "DGeneral_cameraPermissionDeniedAlertMessage".dLocalized(), confirmButtonTitle: "DGeneral_cameraPermissionDeniedAlertGoSettings".dLocalized(), controller: controller, confirmAction: {
             confirmCompletion()
-            DAppManager.shared.showAppSettings()
+            DAppManager.showAppSettings()
         }) {
             cancelCompletion()
         }

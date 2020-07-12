@@ -29,6 +29,11 @@ public extension DLabel {
         return self
     }
     
+    func align(_ alignment: NSTextAlignment) -> DLabel {
+        textAlignment = alignment
+        return self
+    }
+    
     func center() -> DLabel {
         textAlignment = NSTextAlignment.center
         return self
@@ -36,6 +41,19 @@ public extension DLabel {
     
     func infiniteLine() -> DLabel {
         numberOfLines = 0
+        return self
+    }
+    
+    func line(count: Int) -> DLabel {
+        numberOfLines = count
+        return self
+    }
+    
+    func fit(minimumScaleFactor: CGFloat? = nil) -> DLabel {
+        adjustsFontSizeToFitWidth = true
+        if let factor = minimumScaleFactor {
+            self.minimumScaleFactor = factor
+        }
         return self
     }
 }

@@ -19,9 +19,11 @@ public extension DButton {
         return self
     }
     
-    func image(imageName: String? = nil, tintColor: UIColor = UIColor.black, imageContentMode: UIView.ContentMode = UIView.ContentMode.scaleAspectFit, insets: UIEdgeInsets = UIEdgeInsets.zero) -> DButton {
+    func image(imageName: String? = nil, tintColor: UIColor? = nil, imageContentMode: UIView.ContentMode = UIView.ContentMode.scaleAspectFit, insets: UIEdgeInsets = UIEdgeInsets.zero) -> DButton {
         setImage(imageName?.image(), for: UIControl.State.normal)
-        imageView?.tintColor = tintColor
+        if let tintColor_ = tintColor {
+            imageView?.tintColor = tintColor_
+        }
         imageView?.contentMode = imageContentMode
         imageEdgeInsets = insets
         return self

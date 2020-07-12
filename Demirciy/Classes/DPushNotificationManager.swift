@@ -34,12 +34,24 @@ public extension DPushNotificationManager {
         UNUserNotificationCenter.current().requestAuthorization(options: [UNAuthorizationOptions.alert, UNAuthorizationOptions.badge, UNAuthorizationOptions.sound], completionHandler: { (isSuccess, error) in
             if let error = error {
                 DLogManager.e("Notification registration failed: \(error.localizedDescription)")
-                completion(false)
+                DispatchQueue.main.async {
+                    completion(false)
+                }
                 return
             }
             
-            completion(isSuccess)
+            DispatchQueue.main.async {
+                completion(isSuccess)
+            }
         })
+    }
+    
+    class func authStatus(completion: @escaping(_ status: UNAuthorizationStatus) -> Void) {
+        UNUserNotificationCenter.current().getNotificationSettings() { (settings) in
+            DispatchQueue.main.async {
+                completion(settings.authorizationStatus)
+            }
+        }
     }
     
     class func sendLocalNotification(title: String = "Test title", body: String = "Test body", userInfo: [AnyHashable: Any] = [:]) {

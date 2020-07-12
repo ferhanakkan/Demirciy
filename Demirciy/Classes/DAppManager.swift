@@ -30,7 +30,7 @@ public class DAppManager {
 // MARK: - Public Functions
 public extension DAppManager {
     
-    func showAppSettings() {
+    class func showAppSettings() {
         guard let appSettingsURL = URL(string: UIApplication.openSettingsURLString), UIApplication.shared.canOpenURL(appSettingsURL) else { return }
         UIApplication.shared.open(appSettingsURL)
     }
